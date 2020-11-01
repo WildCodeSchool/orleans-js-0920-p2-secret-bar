@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    width: 660px;
+}
+
+.navbar {
+    height: 64px;
+    background-color: var(--main-color);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 2px solid var(--third-color);
+}
+
+.contain {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+}
+
+a {
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 12px;
+    font-family: Julius Sans One;
+    color: var(--second-color);
+    text-decoration: none;
+    background: linear-gradient(to top, var(--third-color) 0%, var(--third-color)1%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+a:hover {
+    background-size: 100% 100%;
+}
+
+.tab {
+    margin-bottom: -8px;
+}
+
+.navbar--logo {
+    height: 40px;
+}
+
+.menu--logo {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .contain{
+        margin: 0 var(--spacing-large);
+    }
+}
+
+@media screen and (max-width:414px) {
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .navbar {
+        z-index: 999;
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--main-color);
+        border-bottom: none;
+        border-top: 2px solid var(--third-color);
+    }
+    .contain{
+        background-color: var(--main-color);
+    }
+    .menu--logo {
+        display: flex;
+    }
+    .logoCart {
+        margin-top: 13px;
+        height: 30px;
+        margin-left: 60px;
+    }
+    .logoPicture {
+        margin-top: 13px;
+        margin-left: 60px;
+        height: 30px;
+    }
+    .logoHome {
+        margin-top: 13px;
+        height: 30px;
+    }
+    .burger {
+        display: none;
+    }
+    .tab {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}

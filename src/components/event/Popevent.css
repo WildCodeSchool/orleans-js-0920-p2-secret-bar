@@ -1,0 +1,181 @@
+@import '../../App.css';
+.eventSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+
+.eventEvent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  min-height: 64vh;
+}
+
+.image {
+  width: 50%;
+}
+
+.presentationEvent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  font-family: var(--second-font);
+  text-align: center;
+  align-items: center;
+  color: var(--second-color);
+}
+
+.presentationEvent h3 {
+  font-family: var(--main-font);
+  font-size: var(--font-size-title);
+  position: relative;
+  margin-top: 0;
+}
+
+.presentationEvent h3::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 128px;
+  background-color: var(--third-color);
+  bottom: -16px;
+  left: calc(50% - 64px);
+}
+
+.descriptionEvent {
+  font-family: var(--second-font);
+  font-size: calc(var(--font-size-main) * 1.2);
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: var(--spacing-large);
+}
+
+textarea {
+  font-family: var(--second-font);
+  font-size: 12px;
+  font-weight: bolder;
+  padding: 4%;
+}
+
+.buttonEvent,
+.buttonPop {
+  background-color: var(--third-color);
+  margin-top: var(--spacing-medium);
+  font-size: var(--font-size-main);
+  padding: var(--spacing);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: 1px solid var(--third-color);
+  transition: all 0.35s ease-in-out;
+  width: 40%;
+}
+
+.buttonEvent:hover {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  transform: scale(1.05);
+}
+
+.buttonPop {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.buttonPop:hover {
+  background-color: var(--main-color);
+  color: var(--third-color);
+  box-shadow: 0 0 15px var(--third-color);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #918f8bc4;
+  font-family: var(--second-font);
+}
+
+.popup_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 70%;
+  margin: auto;
+  background-color: var(--second-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://zupimages.net/up/20/44/z7tp.jpg');
+  background-position: 16% 0;
+  font-size: 16vh;
+  font: status-bar;
+  font-family: var(--second-font);
+  color: var(--second-color);
+  border: 2px solid var(--third-color);
+  z-index: 9999;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .image {
+    width: 80%;
+    margin-bottom: calc(var(--spacing-medium) * 4);
+  }
+  .presentationEvent h3 {
+    margin-top: -4%;
+  }
+  .buttonEvent {
+    margin-bottom: var(--spacing-large);
+  }
+  .popup_inner {
+    width: 90%;
+    background-position: 32%;
+  }
+  .popup_inner h2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: var(--spacing-large);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .popup_inner {
+    width: 90%;
+    background-position: 32%;
+  }
+  .image {
+    width: 100%;
+  }
+  .presentationEvent {
+    margin-top: 8%;
+    width: 100%;
+  }
+  .descriptionEvent {
+    font-size: var(--font-size-main);
+  }
+  .presentationEvent textarea {
+    width: 300px;
+  }
+  .buttonEvent {
+    margin-bottom: var(--spacing-medium);
+  }
+  .buttonPop {
+    width: 60%;
+  }
+}
