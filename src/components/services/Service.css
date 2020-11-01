@@ -1,0 +1,72 @@
+@import '../../App.css';
+.ServiceCard {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--second-font);
+  background-color: var(--second-color);
+}
+
+.ServiceCard img {
+  width: 100%;
+  height: 264px;
+  object-fit: cover;
+}
+
+.ServiceCard .ServiceName {
+  font-size: calc(var(--font-size-main) * 1.5);
+  color: var(--main-color);
+  text-align: center;
+  position: relative;
+  margin-bottom: var(--spacing-large);
+}
+
+.ServiceCard .ServiceName::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 128px;
+  background-color: var(--third-color);
+  bottom: -16px;
+  left: calc(50% - 64px);
+}
+
+.ServiceCard .Desc {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  color: var(--fourth-color);
+  line-height: 1.5rem;
+}
+
+@media screen and ((min-width: 768px) and (max-width: 1024px)) {
+  .ServiceCard {
+    width: 80%;
+  }
+  .ServiceCard img {
+    height: 368px;
+  }
+  .ServiceCard .Desc {
+    margin-bottom: calc(var(--spacing-large) * 1.5);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .ServiceCard {
+    width: 100%;
+  }
+  .ServiceCard img {
+    height: 170px;
+  }
+  .ServiceCard .ServiceName {
+    font-size: calc(var(--font-size-main) * 1.2);
+  }
+  .ServiceCard .Desc {
+    font-size: calc(var(--font-size-main) * 0.8);
+    width: 100%;
+    margin-bottom: calc(var(--spacing-large) * 1.5);
+  }
+}
