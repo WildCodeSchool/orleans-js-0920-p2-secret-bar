@@ -7,7 +7,9 @@
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
-  background-color: var(--main-color);
+  background-image: url('https://cutewallpaper.org/21/dark-smoke-wallpaper/Black-Smoke-Wallpaper-Black-Smoke-Background-Hd-Hd-.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .eventEvent {
@@ -56,7 +58,7 @@
   font-size: calc(var(--font-size-main) * 1.2);
   font-style: italic;
   margin-top: 0;
-  margin-bottom: var(--spacing-large);
+  width: 95%;
 }
 
 textarea {
@@ -111,6 +113,7 @@ textarea {
   margin: auto;
   background-color: #918f8bc4;
   font-family: var(--second-font);
+  z-index: 998;
 }
 
 .popup_inner {

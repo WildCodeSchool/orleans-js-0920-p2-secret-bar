@@ -28,7 +28,7 @@ class Formevent extends React.Component {
   }
 
   getTodayDate() {
-    const day = this.state.date.getDate();
+    const day = this.state.date.getDate() < 10? '0'+this.state.date.getDate() : this.state.date.getDate();
     const month = this.state.date.getMonth() + 1;
     const year = this.state.date.getFullYear();
     return `${day}/${month}/${year}`;
