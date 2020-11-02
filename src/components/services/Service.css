@@ -15,6 +15,10 @@
   object-fit: cover;
 }
 
+figcaption{
+  background-color: white;
+}
+
 .ServiceCard .ServiceName {
   font-size: calc(var(--font-size-main) * 1.5);
   color: var(--main-color);
