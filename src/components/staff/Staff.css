@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    /* box-shadow: 0 0 15px var(--third-color); */
+    box-shadow: 0 0 15px var(--third-color);
 }
 
 .StaffCard:nth-of-type(1) .Image {
@@ -59,6 +59,9 @@ figcaption {
     font-style: italic;
     color: var(--fourth-color);
     line-height: 1.5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .4s ease;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
