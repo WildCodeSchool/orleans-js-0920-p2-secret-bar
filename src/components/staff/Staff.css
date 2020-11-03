@@ -1,0 +1,93 @@
+@import '../../App.css';
+.StaffCard {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--second-font);
+}
+
+.StaffCard .Image {
+    width: 320px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    /* box-shadow: 0 0 15px var(--third-color); */
+}
+
+.StaffCard:nth-of-type(1) .Image {
+    background-position: 48% 64%;
+}
+
+.StaffCard:nth-of-type(2) .Image {
+    background-position: 48%;
+    background-size: 112%;
+}
+
+.StaffCard:nth-of-type(3) .Image {
+    background-size: 184%;
+    background-position: 50% 40%;
+}
+
+figcaption {
+    background: none;
+}
+
+.StaffCard .StaffName {
+    font-size: calc(var(--font-size-main) * 1.5);
+    color: var(--second-color);
+    text-align: center;
+    position: relative;
+    margin-bottom: var(--spacing-large);
+}
+
+.StaffCard .StaffName::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 128px;
+    background-color: var(--third-color);
+    bottom: -16px;
+    left: calc(50% - 64px);
+}
+
+.StaffCard .StaffQuote {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    color: var(--fourth-color);
+    line-height: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .StaffCard {
+        width: 80%;
+    }
+    .StaffCard .Image {
+        height: 400px;
+        width: 400px;
+    }
+    .StaffCard .StaffQuote {
+        margin-bottom: calc(var(--spacing-large) * 1.5);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .StaffCard {
+        width: 100%;
+    }
+    .StaffCard .Image{
+        height: 192px;
+        width: 192px;
+    }
+    .StaffCard .StaffName {
+        font-size: calc(var(--font-size-main) * 1.2);
+    }
+    .StaffCard .StaffQuote {
+        font-size: calc(var(--font-size-main) * 0.8);
+        width: 100%;
+        margin-bottom: calc(var(--spacing-large) * 1.5);
+    }
+}
