@@ -12,12 +12,12 @@ const staff = [
     {
         name: "Mme Éléonore B.H",
         image: "https://zupimages.net/up/20/45/asy7.png",
-        quote: '" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque velit quod aliquid libero earum, provident molestias nihil odit eligendi assumenda veniam recusandae. Fugit natus itaque id maxime perferendis nihil accusantium. "'
+        quote: '" C\'est un rêve...? Alors c\'est un très beau rêve... "'
     },
     {
         name: "Mr Sylvain B.",
         image: "https://zupimages.net/up/20/45/semc.png",
-        quote: '" Aujourd’hui, et bien c’est le jour de mon 111e anniversaire ! Mais hélas 111 ans ce fut un temps trop court à passer en compagnie de si excellents et si admirables hobbits… "'
+        quote: '" Si nous voulons réussir, nous devrons faire preuve de tact, de respect et d’une bonne dose de charme. C’est pourquoi vous devrez me laisser parler, moi. "'
     }
 ]
 
