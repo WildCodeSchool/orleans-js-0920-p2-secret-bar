@@ -10,7 +10,7 @@ const staff = [
         quote: '" Serveur du mois depuis l\'ouverture, je saurai répondre à toutes vos demandes dans les plus brefs délais. "'
     },
     {
-        name: "Mme Éléonore B.H",
+        name: "Mme Éléonore B.H.",
         image: "https://zupimages.net/up/20/45/asy7.png",
         quote: '" C\'est un rêve...? Alors c\'est un très beau rêve... "'
     },

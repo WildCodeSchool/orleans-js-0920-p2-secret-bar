@@ -64,6 +64,16 @@ figcaption {
     transition: .4s ease;
 }
 
+.MobileQuote{
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    color: var(--fourth-color);
+    line-height: 1.5rem;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .StaffCard {
         width: 80%;
@@ -73,6 +83,10 @@ figcaption {
         width: 400px;
     }
     .StaffCard .StaffQuote {
+        display: none;
+    }
+    .MobileQuote{
+        display: flex;
         margin-bottom: calc(var(--spacing-large) * 1.5);
     }
 }
@@ -89,8 +103,12 @@ figcaption {
         font-size: calc(var(--font-size-main) * 1.2);
     }
     .StaffCard .StaffQuote {
+        display: none;
+    }
+    .MobileQuote{
+        display: flex;
+        margin-bottom: calc(var(--spacing-large) * 1.5);
         font-size: calc(var(--font-size-main) * 0.8);
         width: 100%;
-        margin-bottom: calc(var(--spacing-large) * 1.5);
     }
 }

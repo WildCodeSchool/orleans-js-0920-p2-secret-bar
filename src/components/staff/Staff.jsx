@@ -35,6 +35,7 @@ export default class Staff extends Component{
                 <figcaption>
                     <blockquote className="StaffName">{name}</blockquote>
                     <p className="StaffQuote" style={this.state.styleQuote? this.state.styleQuote : ""}>{quote}</p>
+                    <p className="MobileQuote">{quote}</p>
                 </figcaption>
             </figure>
         );
