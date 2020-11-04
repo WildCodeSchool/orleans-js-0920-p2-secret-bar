@@ -4,6 +4,7 @@ import Formevent from '../event/Formevent';
 import ServiceList from '../services/ServiceList';
 import StaffList from '../staff/StaffList';
 import ControlledCarousel from '../carousel/ControlledCarousel';
+import Footer from '../footer/Footer';
 
 export default class Home extends Component {
     render(){
@@ -14,6 +15,7 @@ export default class Home extends Component {
               <Formevent />
               <ServiceList />
               <StaffList />
+              <Footer />
             </main>
         );
     }
