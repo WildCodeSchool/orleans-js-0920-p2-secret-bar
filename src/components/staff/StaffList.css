@@ -1,0 +1,20 @@
+@import '../../App.css';
+.ContainerStaff {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url('https://cutewallpaper.org/21/dark-smoke-wallpaper/Black-Smoke-Wallpaper-Black-Smoke-Background-Hd-Hd-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Staff {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
