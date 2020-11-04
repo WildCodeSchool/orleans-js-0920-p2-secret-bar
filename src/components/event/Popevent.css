@@ -59,6 +59,7 @@
   font-style: italic;
   margin-top: 0;
   width: 95%;
+  color: var(--fourth-color);
 }
 
 textarea {
