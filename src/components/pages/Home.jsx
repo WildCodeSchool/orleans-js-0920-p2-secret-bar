@@ -5,6 +5,7 @@ import ServiceList from '../services/ServiceList';
 import StaffList from '../staff/StaffList';
 // import ControlledCarousel from '../carousel/ControlledCarousel';
 import Footer from '../footer/Footer';
+import FakeCarrousel from '../fake-carrousel/FakeCarrousel';
 
 export default class Home extends Component {
     render(){
@@ -12,6 +13,7 @@ export default class Home extends Component {
             <main>
               <Navbar />
               {/* <ControlledCarousel /> */}
+              <FakeCarrousel />
               <Formevent />
               <ServiceList />
               <StaffList />

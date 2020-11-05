@@ -1,0 +1,52 @@
+@import '../../App.css';
+.Carrousel {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.zupimages.net/up/20/45/7hkw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.Carrousel .MainTitle {
+    font-family: var(--main-font);
+    font-size: calc(var(--font-size-title) * 2);
+    color: var(--second-color);
+}
+
+.Carrousel .Slogan {
+    font-family: var(--second-font);
+    font-size: calc(var(--font-size-main) * 1.4);
+    font-style: italic;
+    color: var(--second-color);
+}
+
+.Carrousel .GoldLetter {
+    color: var(--third-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Carrousel{
+        background-position: 80%;
+    }
+    .Carrousel .Slogan {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .Carrousel{
+        background-position: 80%;
+    }
+    .Carrousel .MainTitle {
+        font-size: calc(var(--font-size-title) * 1.5);
+    }
+    .Carrousel .Slogan {
+        font-size: calc(var(--font-size-main) * 1.2);
+        width: 80%;
+    }
+}
