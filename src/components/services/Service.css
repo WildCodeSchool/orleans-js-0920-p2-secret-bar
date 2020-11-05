@@ -24,6 +24,7 @@ figcaption{
   color: var(--main-color);
   text-align: center;
   position: relative;
+  margin-top:25px;
   margin-bottom: var(--spacing-large);
 }
 

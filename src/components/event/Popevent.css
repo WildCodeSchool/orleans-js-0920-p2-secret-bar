@@ -41,6 +41,8 @@
   font-size: var(--font-size-title);
   position: relative;
   margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 .presentationEvent h3::after {
@@ -59,7 +61,6 @@
   font-style: italic;
   margin-top: 0;
   width: 95%;
-  color: var(--fourth-color);
 }
 
 textarea {
