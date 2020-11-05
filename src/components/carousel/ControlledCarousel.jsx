@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './ControlledCarousel.css';
 
 const imageLounge = 'https://zupimages.net/up/20/45/7hkw.jpg';
@@ -24,7 +24,7 @@ function ControlledCarousel() {
   };
 
   return (
-    <div>
+    <div className="container">
       <div className="carousel-desktop">
         <Carousel
           activeIndex={index}
@@ -47,7 +47,7 @@ function ControlledCarousel() {
               <h3 classname="h3-carousel">
                 W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
               </h3>
-              <p classname="p-carousel">Venez découvrir nos alcools haut de gamme au bar</p>
+              <p classname="p-carousel">Venez découvrir nos alcools haut de gamme</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -56,7 +56,7 @@ function ControlledCarousel() {
               <h3 classname="h3-carousel">
                 W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
               </h3>
-              <p classname="p-carousel">Profitez de nos services uniques</p>
+              <p classname="p-carousel">Profitez de nos services uniques au monde</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -65,7 +65,7 @@ function ControlledCarousel() {
               <h3 classname="h3-carousel">
                 W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
               </h3>
-              <p classname="p-carousel">Participez à nos événements</p>
+              <p classname="">Participez à nos événements inédits et exclusifs</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
