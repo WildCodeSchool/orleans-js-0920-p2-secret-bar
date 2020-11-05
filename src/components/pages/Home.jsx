@@ -3,15 +3,15 @@ import Navbar from '../Navbar';
 import Formevent from '../event/Formevent';
 import ServiceList from '../services/ServiceList';
 import StaffList from '../staff/StaffList';
-import ControlledCarousel from '../carousel/ControlledCarousel';
+// import ControlledCarousel from '../carousel/ControlledCarousel';
 import Footer from '../footer/Footer';
 
 export default class Home extends Component {
     render(){
         return (
-            <main className="container">
+            <main>
               <Navbar />
-              <ControlledCarousel />
+              {/* <ControlledCarousel /> */}
               <Formevent />
               <ServiceList />
               <StaffList />

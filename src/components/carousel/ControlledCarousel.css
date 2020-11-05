@@ -1,12 +1,13 @@
 @import '../../App.css';
-
 .carousel-caption {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   height: 90%;
+  font-size: calc(var(--font-size-main) * 3);
 }
+
 .container {
   margin-left: 0 auto;
   margin-right: 0 auto;
@@ -16,8 +17,7 @@
 
 .h3-carousel {
   font-family: var(--main-font) !important;
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-size: calc(var(--font-size-main)*6);;
+  font-size: calc(var(--font-size-main) * 6);
   color: var(--second-color);
 }
 
@@ -25,10 +25,11 @@
   font-size: smaller;
 }
 
-.p-carousel {
+.carousel-caption .p-carousel {
   font-family: var(--second-font);
   font-size: calc(var(--font-size-main)*2);
   color: var(--second-color);
+  font-style: italic;
 }
 
 .carousel-mobile {
@@ -39,39 +40,33 @@
   display: none;
 }
 
-@media screen and (min-width: 425px) and (max-width: 1024px){
+@media screen and (min-width: 425px) and (max-width: 1024px) {
   .h3-carousel {
     font-size: calc(var(--font-size-main)*2.5);
     color: whitesmoke;
   }
-
   .p-carousel {
     font-size: calc(var(--font-size-main)*1.5);
     color: whitesmoke;
   }
-
   .carousel-desktop {
     display: none;
   }
-
   .carousel-tablet {
     display: block;
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .h3-carousel {
     font-size: calc(var(--font-size-main)*1.5);
   }
-
   .p-carousel {
     font-size: var(--font-size-main);
-    }
-  
+  }
   .carousel-desktop {
     display: none;
   }
-
   .carousel-mobile {
     display: block;
   }
