@@ -14,12 +14,12 @@
 .Footer .Credits{
     font-family: var(--main-font);
     font-size: calc(var(--font-size-main) * 1.2);
+    margin-top: 16px;
 }
 
 .Footer .Students{
     font-family: var(--second-font);
     font-size: var(--font-size-main);
-    margin-top: -16px;
 }
 
 @media screen and (max-width: 414px){

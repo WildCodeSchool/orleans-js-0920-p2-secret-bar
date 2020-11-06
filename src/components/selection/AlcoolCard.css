@@ -26,13 +26,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Julius Sans One' ;
+    text-align: center;
+    margin-top: 16px;
 }
 
-.h1-cocktail {
-    font-size: 48px;
-    color: #1d1b19;
-    margin: 8vh 0px;
+.div-cocktail-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Julius Sans One' ;
 }
+
 
 .lign-cocktail {
     background-color: #e9ae60;
@@ -42,6 +48,8 @@ body {
     justify-content: space-around;
     flex-direction: row;
     margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width:768px) {
