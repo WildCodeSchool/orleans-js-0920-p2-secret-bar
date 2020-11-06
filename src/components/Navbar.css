@@ -12,9 +12,11 @@
     height: 64px;
     background-color: var(--main-color);
     width: 100%;
-    position: fixed;
+    position: fixed !important;
     z-index: 999;
     border-bottom: 2px solid var(--third-color);
+    display: block !important;
+    padding:0 !important;
 }
 
 .contain {
@@ -25,7 +27,7 @@
     height: 56px;
 }
 
-a {
+.navbar a {
     padding-top: 18px;
     padding-right: 20px;
     padding-left: 20px;
@@ -37,8 +39,10 @@ a {
     transition: background-size .5s;
 }
 
-a:hover {
+.navbar a:hover {
     background-size: 100% 100%;
+    color :var(--third-color);
+    text-decoration: none;
 }
 
 .tab {

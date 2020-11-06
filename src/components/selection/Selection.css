@@ -1,0 +1,32 @@
+.container-carousel {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.three-selections {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    vertical-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.load {
+    letter-spacing: 2px;
+    color: #918f8b;
+}
+
+@media screen and (max-width:768px) {
+    .three-selections {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
+}

@@ -5,8 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--second-font);
-  background-color: var(--second-color);
+  font-family: var(--second-font)!important;
+  background-color: white;
+  
 }
 
 .ServiceCard img {
@@ -15,11 +16,16 @@
   object-fit: cover;
 }
 
+figcaption{
+  background-color: white;
+}
+
 .ServiceCard .ServiceName {
   font-size: calc(var(--font-size-main) * 1.5);
   color: var(--main-color);
   text-align: center;
   position: relative;
+  margin-top:25px;
   margin-bottom: var(--spacing-large);
 }
 
@@ -42,7 +48,7 @@
   line-height: 1.5rem;
 }
 
-@media screen and ((min-width: 768px) and (max-width: 1024px)) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .ServiceCard {
     width: 80%;
   }

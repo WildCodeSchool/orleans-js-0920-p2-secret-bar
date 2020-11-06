@@ -28,7 +28,7 @@ class Formevent extends React.Component {
   }
 
   getTodayDate() {
-    const day = this.state.date.getDate();
+    const day = this.state.date.getDate() < 10? '0'+this.state.date.getDate() : this.state.date.getDate();
     const month = this.state.date.getMonth() + 1;
     const year = this.state.date.getFullYear();
     return `${day}/${month}/${year}`;
@@ -37,7 +37,7 @@ class Formevent extends React.Component {
   render() {
     return (
       <section className="eventSection">
-        <SectionTitle title="Evenement" color="white" />
+        <SectionTitle title="Évènement" color="white" />
         <div className="eventEvent">
           <img
             className="image"
@@ -56,8 +56,8 @@ class Formevent extends React.Component {
             <textarea
               type="text"
               id="message"
-              cols="56"
-              rows="8"
+              cols="44"
+              rows="4"
               placeholder={this.state.message}
               onChange={this.handleChangeMessage}
             />
