@@ -3,13 +3,14 @@
 .menu {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     width: 660px;
 }
 
 .navbar {
-    height: 64px;
+    height: 72px;
     background-color: var(--main-color);
     width: 100%;
     position: fixed !important;
@@ -24,7 +25,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 56px;
+    height: 64px;
 }
 
 .navbar a {
@@ -32,6 +33,7 @@
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 12px;
+    margin-left: 32px;
     font-family: Julius Sans One;
     color: var(--second-color);
     text-decoration: none;
@@ -55,6 +57,12 @@
 
 .menu--logo {
     display: none;
+}
+
+.active a{
+    background-size: 100% 100%;
+    color :var(--third-color);
+    text-decoration: none;
 }
 
 @media screen and (max-width:768px) {

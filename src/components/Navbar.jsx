@@ -1,6 +1,6 @@
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({ active }) {
   return (
     <nav className="navbar">
       <div className="contain">
@@ -28,11 +28,11 @@ function Navbar() {
             alt="logo"
           />
         </div>
-        <ul className="menu" id="menu">
-          <a href="../App.jsx">Accueil</a>
-          <a href="../App.jsx">Carte</a>
-          <a href="../App.jsx">Livre d'or</a>
-        </ul>
+        <div className="menu">
+          <div className={active === "accueil" ? "active" : ""}><a href="../Home.jsx">Accueil</a></div>
+          <div className={active === "carte" ? "active" : ""}><a href="../App.jsx">Carte</a></div>
+          <div className={active === "livre" ? "active" : ""}><a href="../App.jsx">Livre d'or</a></div>
+        </div>
       </div>
     </nav>
   );

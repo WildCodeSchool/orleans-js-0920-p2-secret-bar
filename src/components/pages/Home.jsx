@@ -12,7 +12,7 @@ export default class Home extends Component {
     render(){
         return (
             <main className="container">
-              <Navbar />
+              <Navbar active="accueil" />
               <ControlledCarousel />
               <Selection />
               <Formevent />
