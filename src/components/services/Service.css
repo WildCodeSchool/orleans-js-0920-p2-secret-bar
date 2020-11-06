@@ -5,8 +5,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--second-font);
-  background-color: var(--second-color);
+  font-family: var(--second-font)!important;
+  background-color: white;
+  
 }
 
 .ServiceCard img {
@@ -47,7 +48,7 @@ figcaption{
   line-height: 1.5rem;
 }
 
-@media screen and ((min-width: 768px) and (max-width: 1024px)) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .ServiceCard {
     width: 80%;
   }

@@ -16,7 +16,7 @@
 }
 
 .h3-carousel {
-  font-family: var(--main-font) !important;
+  font-family: var(--main-font);
   font-size: calc(var(--font-size-main) * 6);
   color: var(--second-color);
 }
@@ -27,7 +27,7 @@
 
 .carousel-caption .p-carousel {
   font-family: var(--second-font);
-  font-size: calc(var(--font-size-main)*2);
+  font-size: 20px !important;
   color: var(--second-color);
   font-style: italic;
 }

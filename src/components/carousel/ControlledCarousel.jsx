@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { useState } from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './ControlledCarousel.css';
 
 const imageLounge = 'https://zupimages.net/up/20/45/7hkw.jpg';

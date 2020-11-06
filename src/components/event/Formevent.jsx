@@ -37,7 +37,7 @@ class Formevent extends React.Component {
   render() {
     return (
       <section className="eventSection">
-        <SectionTitle title="Evenement" color="white" />
+        <SectionTitle title="Évènement" color="white" />
         <div className="eventEvent">
           <img
             className="image"
@@ -56,8 +56,8 @@ class Formevent extends React.Component {
             <textarea
               type="text"
               id="message"
-              cols="56"
-              rows="8"
+              cols="44"
+              rows="4"
               placeholder={this.state.message}
               onChange={this.handleChangeMessage}
             />

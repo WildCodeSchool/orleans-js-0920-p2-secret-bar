@@ -40,6 +40,7 @@ figcaption {
     text-align: center;
     position: relative;
     margin-bottom: var(--spacing-large);
+    margin-top: 32px;
 }
 
 .StaffCard .StaffName::after {

@@ -1,3 +1,6 @@
+.container-carousel {
+    margin-top: 32px;
+}
 
 .three-selections {
     display: flex;
@@ -5,6 +8,7 @@
     flex-wrap: wrap;
     min-height: 100vh;
     margin: 0 auto;
+    width: 90%;
 }
 
 .load {
