@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  height: 90%;
+  min-height: 90%;
   font-size: calc(var(--font-size-main) * 3);
 }
 
@@ -13,6 +13,7 @@
   margin-right: 0 auto;
   padding: 0;
   max-width: 100%;
+  min-height: 100vh;
 }
 
 .h3-carousel {
@@ -30,6 +31,14 @@
   font-size: 20px !important;
   color: var(--second-color);
   font-style: italic;
+}
+
+.carousel-desktop {
+  height: 100vh;
+}
+
+img.d-block{
+  height: 100vh;
 }
 
 .carousel-mobile {
