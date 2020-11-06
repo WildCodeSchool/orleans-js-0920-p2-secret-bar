@@ -66,7 +66,7 @@ export default class Selection extends React.Component {
     render() {
         return (
             <div className="container-carousel">
-                <SectionTitle title="Sélections du jour" color="black"/>
+                <SectionTitle title="Séléction du Jour" color="black"/>
                 <div className="three-selections">
                     <div>
                         {this.state.cocktail ? (

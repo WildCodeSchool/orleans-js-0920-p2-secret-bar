@@ -56,6 +56,10 @@ body {
     .img-cocktail{
         width: 256px;
     }
+
+    .div-cocktail-content{
+        margin-bottom: calc(var(--spacing-large) * 1.5);
+    }
     
     .div-cocktail-content h3 {
         width: 258px;

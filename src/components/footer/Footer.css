@@ -14,7 +14,7 @@
 .Footer .Credits{
     font-family: var(--main-font);
     font-size: calc(var(--font-size-main) * 1.2);
-    margin-top: 16px;
+    margin-top: 32px;
 }
 
 .Footer .Students{
