@@ -3,7 +3,7 @@ import './SectionTitle.css';
 
 function SectionTitle({ title, color }) {
   return (
-    <div className="HeadTitle">
+    <div className="HeadTitle" data-aos="fade-up">
       <h2
         className={
           color === 'black' ? 'ServicesTitle black' : 'ServicesTitle white'

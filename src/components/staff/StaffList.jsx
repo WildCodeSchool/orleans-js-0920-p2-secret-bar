@@ -24,10 +24,10 @@ const staff = [
 export default class StaffList extends Component{
     render(){
         return(
-            <div className="ContainerStaff">
+            <div className="ContainerStaff" data-aos="fade-up">
                 <SectionTitle title="Nos Serveurs" color="white" />
 
-                <div className="Staff">
+                <div className="Staff" data-aos="fade-up">
                     {staff.map(person => (
                         <Staff key={person.name} {...person} />
                     ))}

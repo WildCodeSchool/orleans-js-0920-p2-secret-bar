@@ -36,7 +36,7 @@ class Formevent extends React.Component {
 
   render() {
     return (
-      <section className="eventSection">
+      <section className="eventSection" data-aos="fade-up">
         <SectionTitle title="Évènement" color="white" />
         <div className="eventEvent">
           <img
