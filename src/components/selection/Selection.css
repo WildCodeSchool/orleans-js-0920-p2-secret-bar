@@ -27,5 +27,6 @@
         flex-wrap: wrap;
         min-height: 100vh;
         margin: 0 auto;
+        width: 64%;
     }
 }

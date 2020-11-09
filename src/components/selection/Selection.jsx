@@ -13,15 +13,11 @@ export default class Selection extends React.Component {
             cocktail2: null
         }
         this.getInfo = this.getInfo.bind(this);
-        this.getInfo1 = this.getInfo1.bind(this);
-        this.getInfo2 = this.getInfo2.bind(this);
 
     }
 
     componentDidMount() {
         this.getInfo();
-        this.getInfo1();
-        this.getInfo2();
     }
 
     getInfo() {
@@ -30,32 +26,7 @@ export default class Selection extends React.Component {
         .then(res => res.data)
         .then(data => {
             this.setState({ cocktail: data.filter(cocktail => cocktail.category !== "cocktail")[Math.floor(Math.random() * 42)] });
-            console.log(this.state.cocktail)
-        })
-        .catch(err => {
-            console.error(err);
-        });
-    }
-
-    getInfo1() {
-        axios
-        .get('https://cocktailsprojectapi.herokuapp.com/cocktails')
-        
-        .then(res => res.data)
-        .then(data => {
             this.setState({ cocktail1: data.filter(cocktail => cocktail.name !== this.state.cocktail.name && cocktail.category !== "cocktail")[Math.floor(Math.random() * 42)]});
-        })
-        .catch(err => {
-            console.error(err);
-        });
-    }
-
-    getInfo2() {
-        axios
-        .get('https://cocktailsprojectapi.herokuapp.com/cocktails')
-        
-        .then(res => res.data)
-        .then(data => {
             this.setState({ cocktail2: data.filter(cocktail => cocktail.name !== this.state.cocktail.name && cocktail.name !== this.state.cocktail1.name && cocktail.category !== "cocktail")[Math.floor(Math.random() * 42)] });
         })
         .catch(err => {
