@@ -140,7 +140,7 @@ function ControlledCarousel() {
             />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Profitez de nos services uniques</p>
+              <p className="p-carousel">Profitez de nos services uniques au monde</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

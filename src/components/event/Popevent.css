@@ -173,6 +173,9 @@ textarea {
   .image {
     width: 100%;
   }
+  .presentationEvent h3 {
+    font-size: calc(var(--font-size-title) * 0.8);
+  }
   .presentationEvent {
     margin-top: 8%;
     width: 100%;
@@ -182,6 +185,8 @@ textarea {
   }
   .presentationEvent textarea {
     width: 300px;
+    margin: 16px 0;
+    font-size: 12px;
   }
   .buttonEvent {
     margin-bottom: calc(var(--spacing-large) * 1.5);
