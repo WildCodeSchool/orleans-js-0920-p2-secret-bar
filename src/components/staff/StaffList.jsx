@@ -6,7 +6,7 @@ import './StaffList.css';
 const staff = [
     {
         name: "♕ Mr Louis D. ♕",
-        image: "https://www.zupimages.net/up/20/45/59pn.png",
+        image: "https://zupimages.net/up/20/46/yev1.jpg",
         quote: '" Serveur du mois depuis l\'ouverture, je saurai répondre à toutes vos demandes dans les plus brefs délais. "'
     },
     {
@@ -24,10 +24,10 @@ const staff = [
 export default class StaffList extends Component{
     render(){
         return(
-            <div className="ContainerStaff">
+            <div className="ContainerStaff" data-aos="fade-up">
                 <SectionTitle title="Nos Serveurs" color="white" />
 
-                <div className="Staff">
+                <div className="Staff" data-aos="fade-up">
                     {staff.map(person => (
                         <Staff key={person.name} {...person} />
                     ))}

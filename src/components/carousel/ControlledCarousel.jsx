@@ -35,37 +35,29 @@ function ControlledCarousel() {
           <Carousel.Item>
             <img className="d-block w-100" src={imageLounge} alt="Lounge" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageBar} alt="Bar" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Venez découvrir nos alcools haut de gamme</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Venez découvrir nos alcools haut de gamme</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageServices} alt="Services" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Profitez de nos services uniques au monde</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Profitez de nos services uniques au monde</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageEvent} alt="Event" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="">Participez à nos événements inédits et exclusifs</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Participez à nos événements inédits et exclusifs</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -84,19 +76,15 @@ function ControlledCarousel() {
               alt="Lounge"
             />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageBarTablet} alt="Bar" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Venez découvrir nos alcools haut de gamme au bar</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Venez découvrir nos alcools haut de gamme au bar</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -106,19 +94,15 @@ function ControlledCarousel() {
               alt="Services"
             />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Profitez de nos services uniques</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Profitez de nos services uniques</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageEventTablet} alt="Event" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Participez à nos événements</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Participez à nos événements</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -137,19 +121,15 @@ function ControlledCarousel() {
               alt="Lounge"
             />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageBarMobile} alt="Bar" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Venez découvrir nos alcools haut de gamme au bar</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Venez découvrir nos alcools haut de gamme au bar</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -159,19 +139,15 @@ function ControlledCarousel() {
               alt="Services"
             />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Profitez de nos services uniques</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Profitez de nos services uniques</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100" src={imageEventMobile} alt="Event" />
             <Carousel.Caption>
-              <h3 classname="h3-carousel">
-                W<span className="span-carousel">ILD</span> C<span className="span-carousel">ODE</span> B<span className="span-carousel">AR</span>
-              </h3>
-              <p classname="p-carousel">Participez à nos événements</p>
+              <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
+              <p className="p-carousel">Participez à nos événements</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
