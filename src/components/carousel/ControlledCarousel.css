@@ -20,6 +20,11 @@
   font-family: var(--main-font);
   font-size: calc(var(--font-size-main) * 6);
   color: var(--second-color);
+  text-transform: capitalize;
+}
+
+.gold {
+  color: var(--third-color);
 }
 
 .span-carousel {
@@ -28,7 +33,7 @@
 
 .carousel-caption .p-carousel {
   font-family: var(--second-font);
-  font-size: 20px !important;
+  font-size: var(--font-size-title);
   color: var(--second-color);
   font-style: italic;
 }
@@ -37,7 +42,7 @@
   height: 100vh;
 }
 
-img.d-block{
+img.d-block {
   height: 100vh;
 }
 
@@ -51,12 +56,10 @@ img.d-block{
 
 @media screen and (min-width: 425px) and (max-width: 1024px) {
   .h3-carousel {
-    font-size: calc(var(--font-size-main)*2.5);
-    color: whitesmoke;
+    font-size: calc(var(--font-size-main) * 4);
   }
-  .p-carousel {
-    font-size: calc(var(--font-size-main)*1.5);
-    color: whitesmoke;
+  .carousel-caption .p-carousel {
+    font-size: var(--font-size-title);
   }
   .carousel-desktop {
     display: none;
@@ -68,10 +71,10 @@ img.d-block{
 
 @media screen and (max-width: 425px) {
   .h3-carousel {
-    font-size: calc(var(--font-size-main)*1.5);
+    font-size: calc(var(--font-size-main) * 3);
   }
-  .p-carousel {
-    font-size: var(--font-size-main);
+  .carousel-caption .p-carousel {
+    font-size: calc(var(--font-size-main) * 1.5);
   }
   .carousel-desktop {
     display: none;
