@@ -3,7 +3,7 @@ import './Service.css';
 
 function Service({ image, service, description }) {
   return (
-    <figure class="ServiceCard">
+    <figure class="ServiceCard" data-aos="fade-up">
       <img src={image} alt={service} />
       <figcaption>
         <blockquote className="ServiceName">{service}</blockquote>

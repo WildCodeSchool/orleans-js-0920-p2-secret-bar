@@ -8,7 +8,7 @@ class AlcoolCard extends React.Component {
     render(){
         const {image, name, alcool, volume, price} = this.props ;
         return (
-            <div className="div-cocktail">
+            <div className="div-cocktail" data-aos="fade-up">
                     <div className="div-cocktail-content">
                         <img src={image} alt="{name}" className="img-cocktail"/>
                         <h3>{name.toUpperCase()}</h3>
