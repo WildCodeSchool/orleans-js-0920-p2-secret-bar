@@ -5,28 +5,28 @@ function Navbar({ active }) {
     <nav className="navbar">
       <div className="contain">
         <div className="tab">
-          <img
+            <a href=""><img
             className="navbar--logo"
-            src="https://zupimages.net/up/20/44/kzh0.png"
+            src="https://zupimages.net/up/20/45/jc89.png"
             alt="logo"
-          />
+          /></a>
         </div>
         <div className="menu--logo">
-          <img
-            className="logoHome"
-            src="https://zupimages.net/up/20/44/ji9d.png"
-            alt="logo"
-          />
-          <img
-            className="logoCart"
-            src="https://zupimages.net/up/20/44/33qx.png"
-            alt="logo"
-          />
-          <img
-            className="logoPicture"
-            src="https://zupimages.net/up/20/44/xk4n.png"
-            alt="logo"
-          />
+            <img
+              className="logoHome"
+              src="https://zupimages.net/up/20/44/ji9d.png"
+              alt="logo"
+            />
+            <img
+              className="logoCart"
+              src="https://zupimages.net/up/20/44/33qx.png"
+              alt="logo"
+            />
+            <img
+              className="logoPicture"
+              src="https://zupimages.net/up/20/44/xk4n.png"
+              alt="logo"
+            />
         </div>
         <div className="menu">
           <div className={active === "accueil" ? "active" : ""}><a href="../Home.jsx">Accueil</a></div>
