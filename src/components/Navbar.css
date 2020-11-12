@@ -14,7 +14,7 @@
     background-color: var(--main-color);
     width: 100%;
     position: fixed !important;
-    z-index: 999;
+    z-index: 5;
     border-bottom: 2px solid var(--third-color);
     display: block !important;
     padding: 0 !important;
@@ -78,7 +78,7 @@
         width: 100%;
     }
     .navbar {
-        z-index: 999;
+        z-index: 5;
         display: flex;
         justify-content: space-around;
         background-color: var(--main-color);
@@ -89,22 +89,18 @@
         background-color: var(--main-color);
     }
     .menu--logo {
+        width: 90%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
-    .logoCart {
-        margin-top: 13px;
-        height: 30px;
-        margin-left: 60px;
-    }
-    .logoPicture {
-        margin-top: 13px;
-        margin-left: 60px;
+    .menu--logo a {
+        display: block;
+        width: 30px;
         height: 30px;
     }
-    .logoHome {
-        margin-top: 13px;
-        height: 30px;
+    .menu--logo a img{
+        width: 100%;
     }
     .burger {
         display: none;
