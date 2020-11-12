@@ -120,7 +120,7 @@ class ControlledAccordions extends React.Component {
   render(){
     return (
       <div className="root1">
-        <SectionTitle title="La carte" color="black"/>
+        <SectionTitle title="Notre carte" color="black"/>
         <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -131,7 +131,7 @@ class ControlledAccordions extends React.Component {
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-            <div className="test">
+            <div>
                 {this.state.champagne ? (
                     <div className="three-col">
                         {this.state.champagne.map(item => 
@@ -197,7 +197,8 @@ class ControlledAccordions extends React.Component {
                 {this.state.wine ? (
                     <div className="three-col">
                         {this.state.wine.map(item => 
-                            <AlcoolCard 
+                            <AlcoolCard
+                                className="alcool-card"
                                 key={item.name}
                                 image={item.image}
                                 name={item.name}
