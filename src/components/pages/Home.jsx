@@ -6,8 +6,6 @@ import Selection from '../selection/Selection';
 import StaffList from '../staff/StaffList';
 import Footer from '../footer/Footer';
 import ControlledCarousel from '../carousel/ControlledCarousel';
-import ControlledAccordions from '../menu/Accordion';
-
 
 export default class Home extends Component {
     render(){
@@ -15,7 +13,6 @@ export default class Home extends Component {
             <main className="container">
               <Navbar active="accueil" />
               <ControlledCarousel />
-              <ControlledAccordions />
               <Selection />
               <Formevent />
               <ServiceList />
