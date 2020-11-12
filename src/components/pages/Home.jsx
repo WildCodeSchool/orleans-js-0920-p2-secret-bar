@@ -20,17 +20,17 @@ import "./Home.css";
 
 const Home =  props => {
 
-    let panoDroit = null;
-    let panoGauche = null;
+    let panelRight = null;
+    let panelLeft = null;
     let transition = null;
     let btnEnter = null;
-    let accueil = null;
-    let accueil_site = null;
+    let welcome = null;
+    let welcome_site = null;
     let formAcc = null;
     let phrase = null;
     let logoMini = null;
     let animation = null;
-    let animAccueil = new TimelineLite({
+    let animWelcome = new TimelineLite({
         paused: true,
         onStart: () => {
           animation.play();
@@ -66,7 +66,7 @@ const Home =  props => {
               return;
             }
           });
-          animAccueil
+          animWelcome
             .from(
               formAcc,
               0.5,
@@ -101,7 +101,7 @@ const Home =  props => {
             .play();
             if(connected){
                 var tl = new TimelineLite({});
-                tl.to(accueil_site, 0.7, {
+                tl.to(welcome_site, 0.7, {
                     opacity: 1
                 }).play();
             }
@@ -133,10 +133,10 @@ const Home =  props => {
                 "-=0.2"
             )
             .to(logoMini, 0.5, { opacity: 0 }, "-=0.2")
-            .to(panoDroit, 0.7, { height: 0, ease: "power2.inOut" }, "pano+=0.5")
-            .to(panoGauche, 0.7, { yPercent: 100, ease: "power2.inOut" }, "pano+=0.5")
+            .to(panelRight, 0.7, { height: 0, ease: "power2.inOut" }, "pano+=0.5")
+            .to(panelLeft, 0.7, { yPercent: 100, ease: "power2.inOut" }, "pano+=0.5")
             
-            .to([transition, accueil], 0.1, {
+            .to([transition, welcome], 0.1, {
                 display: "none",
                 onComplete: () => {
                 setConnected(true);
@@ -158,15 +158,15 @@ return(
     {!connected && (
     <div>
         <div className="transition" ref={div => (transition = div)}>
-            <div className="panoGauche" ref={div => (panoGauche = div)}></div>
-            <div className="panoDroit" ref={div => (panoDroit = div)}></div>
+            <div className="panelLeft" ref={div => (panelLeft = div)}></div>
+            <div className="panelRight" ref={div => (panelRight = div)}></div>
         </div>
-        <div className="accueil" ref={div => (accueil = div)}>
+        <div className="welcome" ref={div => (welcome = div)}>
             <div ref={div => (logoMini = div)}>
             <LogoMini />
             </div>
 
-            <form className="form_accueil" ref={div => (formAcc = div)}>
+            <form className="form_welcome" ref={div => (formAcc = div)}>
             <div className="error"> {errorForm}</div>
             <label htmlFor="identifiant">Identifiant: </label>
             <input
@@ -185,20 +185,19 @@ return(
             >
             Entrer
             </button>
-            <div className="sans_mp" ref={div => (phrase = div)}>
+            <div className="without_mp" ref={div => (phrase = div)}>
             <p>
                 Vous n'avez pas encore d'identifiant, dommage !{"  "}
 
-                <span className="sans_mp_dark"><Link to="/inscription"> En demander un ;)</Link></span>
+                <span className="without_mp_dark"><Link to="/inscription"> En demander un ;)</Link></span>
             </p>
             </div>
         </div>
     </div>
     )}
     {connected && (
-        <main className="accueil_container" ref={div => (accueil_site = div)}>
+        <main className="welcome_container" ref={div => (welcome_site = div)}>
             <ControlledCarousel />
-            <ControlledAccordions />
             <Selection />
             <Formevent />
             <ServiceList />

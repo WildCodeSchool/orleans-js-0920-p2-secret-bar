@@ -12,14 +12,14 @@
     display: flex;
     z-index: 15;
   }
-  .transition .panoGauche,
-  .transition .panoDroit {
+  .transition .panelLeft,
+  .transition .panelRight {
     width: 50%;
     height: 100%;
     background-color: var(--main-color);
   }
 
-.accueil {
+.welcome {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,25 +32,25 @@
     z-index: 20;
   }
   
-  .accueil .logoMini {
+  .welcome .logoMini {
     display: block;
     width: 400px;
     fill: none;
     stroke: var(--third-color);
     transition: all 0.5s;
   }
-  .accueil .error {
+  .welcome .error {
     padding-top: 25px;
     text-align: center;
     color: rgb(214, 48, 48);
   }
-  .accueil .form_accueil {
+  .welcome .form_welcome {
     margin: 0 auto;
   }
-  .accueil .form_accueil label{
+  .welcome .form_welcome label{
     display: none;
   }
-  .accueil .form_accueil input{
+  .welcome .form_welcome input{
     display: block;
     margin: 35px;
     padding: 10px;
@@ -64,37 +64,37 @@
     font-weight: 100;
   }
   
-  .accueil .form_accueil input::placeholder{
+  .welcome .form_welcome input::placeholder{
     color: var(--third-color);
     opacity: 0.15;
   }
   
-  .accueil .form_accueil input:focus {
+  .welcome .form_welcome input:focus {
     background: var(--third-color);
     border: none;
     color: var(--second-color);
     outline: none;
   }
   
-  .accueil .sans_mp {
+  .welcome .without_mp {
     font-family: var(--second-font);
     font-weight: 100;
     color: var(--third-color)!important;
     opacity: 0.5;
     margin-top: 75px;
   }
-  .accueil .sans_mp .sans_mp_dark {
+  .welcome .without_mp .without_mp_dark {
     filter: blur(5px);
     transition: filter 0.3s;
     cursor: pointer;
   }
-  .accueil .sans_mp .sans_mp_dark a {
+  .welcome .without_mp .without_mp_dark a {
 
     color: var(--third-color)!important;
     text-decoration: none;
 
   }
-  .accueil .sans_mp .sans_mp_dark:hover {
+  .welcome .without_mp .without_mp_dark:hover {
     filter: blur(0px);
   }
     
@@ -137,19 +137,19 @@
   .enter:hover::before {
     width: calc(50% + 1px);
   }
-  .accueil .enter:hover::after {
+  .welcome .enter:hover::after {
     width: 50%;
     transform: translate(0 -100%);
   }
   
 
 
-.accueil_container{
+.welcome_container{
     opacity:0;
 }
 
 @media screen and (min-width: 415px) and (max-width: 768px) {
-  .accueil .logoMini {
+  .welcome .logoMini {
     width: 200px;
     }
 
@@ -157,16 +157,16 @@
 
 @media screen and (max-width: 414px) {
 
-.accueil .logoMini {
+.welcome .logoMini {
 width: 150px;
 }
 
-.accueil .form_accueil input {
+.welcome .form_welcome input {
 width: 70%;
 margin: 35px auto;
 }
 
-.accueil .sans_mp {
+.welcome .without_mp {
 width: 70%;
 text-align: center;
 }
