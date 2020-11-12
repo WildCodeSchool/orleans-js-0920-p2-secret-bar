@@ -2,6 +2,27 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## List of dependencies to install:
+
+### Aos : 
+npm install axios
+
+### Axios : 
+npm install aos
+
+### Matérial UI: 
+npm install @material-ui/core
+npm install @material-ui/icons
+
+### React-bootstrap : 
+npm install react-bootstrap bootstrap
+
+### React-router : 
+npm install react-router-dom
+
+### React-favicon : 
+npm install react-favicon
+
 ## Available Scripts
 
 In the project directory, you can run:
