@@ -10,7 +10,7 @@ npm install axios
 ### Axios : 
 npm install aos
 
-### Matérial UI: 
+### Material UI: 
 npm install @material-ui/core
 npm install @material-ui/icons
 
