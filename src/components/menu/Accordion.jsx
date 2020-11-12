@@ -121,51 +121,116 @@ class ControlledAccordions extends React.Component {
     return (
       <div className="root1">
         <SectionTitle title="Notre carte" color="black"/>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1bh-content"
-            id="panel1bh-header"
-          >
-            <Typography>Nos Champagnes</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            <div>
-                {this.state.champagne ? (
-                    <div className="three-col">
-                        {this.state.champagne.map(item => 
-                            <AlcoolCard 
-                                key={item.name}
-                                image={item.image}
-                                name={item.name}
-                                alcool={item.alcool}
-                                volume={item.volume}
-                                price={item.price}
-                            />
-                        )}
-                    </div>   
-                ) : 
-                <p className="load">Loading</p>
-                }
-            </div>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel2bh-content"
-            id="panel2bh-header"
-          >
-            <Typography >Nos Whiskys</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            <div>
-                  {this.state.whiskies ? (
+        <div data-aos="fade-up">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1bh-content"
+              id="panel1bh-header"
+            >
+              <Typography>Nos Champagnes</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <div>
+                  {this.state.champagne ? (
                       <div className="three-col">
-                          {this.state.whiskies.map(item => 
+                          {this.state.champagne.map(item => 
+                              <AlcoolCard 
+                                  key={item.name}
+                                  image={item.image}
+                                  name={item.name}
+                                  alcool={item.alcool}
+                                  volume={item.volume}
+                                  price={item.price}
+                              />
+                          )}
+                      </div>   
+                  ) : 
+                  <p className="load">Loading</p>
+                  }
+              </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2bh-content"
+              id="panel2bh-header"
+            >
+              <Typography >Nos Whiskys</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <div>
+                    {this.state.whiskies ? (
+                        <div className="three-col">
+                            {this.state.whiskies.map(item => 
+                                <AlcoolCard 
+                                    key={item.name}
+                                    image={item.image}
+                                    name={item.name}
+                                    alcool={item.alcool}
+                                    volume={item.volume}
+                                    price={item.price}
+                                />
+                            )}
+                        </div> 
+                    ) : 
+                    <p className="load">Loading</p>
+                    }
+                </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel3bh-content"
+              id="panel3bh-header"
+            >
+              <Typography >Nos vins</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <div>
+                  {this.state.wine ? (
+                      <div className="three-col">
+                          {this.state.wine.map(item => 
+                              <AlcoolCard
+                                  className="alcool-card"
+                                  key={item.name}
+                                  image={item.image}
+                                  name={item.name}
+                                  alcool={item.alcool}
+                                  volume={item.volume}
+                                  price={item.price}
+                              />
+                          )}
+                  </div> 
+                  ) : 
+                  <p className="load">Loading</p>
+                  }
+              </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel4bh-content"
+              id="panel4bh-header"
+            >
+              <Typography >Nos spiritueux</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <div>
+                  {this.state.alcohols ? (
+                      <div className="three-col">
+                          {this.state.alcohols.map(item => 
                               <AlcoolCard 
                                   key={item.name}
                                   image={item.image}
@@ -180,135 +245,72 @@ class ControlledAccordions extends React.Component {
                   <p className="load">Loading</p>
                   }
               </div>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel3bh-content"
-            id="panel3bh-header"
-          >
-            <Typography >Nos vins</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            <div>
-                {this.state.wine ? (
-                    <div className="three-col">
-                        {this.state.wine.map(item => 
-                            <AlcoolCard
-                                className="alcool-card"
-                                key={item.name}
-                                image={item.image}
-                                name={item.name}
-                                alcool={item.alcool}
-                                volume={item.volume}
-                                price={item.price}
-                            />
-                        )}
-                </div> 
-                ) : 
-                <p className="load">Loading</p>
-                }
-            </div>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel4bh-content"
-            id="panel4bh-header"
-          >
-            <Typography >Nos spiritueux</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            <div>
-                {this.state.alcohols ? (
-                    <div className="three-col">
-                        {this.state.alcohols.map(item => 
-                            <AlcoolCard 
-                                key={item.name}
-                                image={item.image}
-                                name={item.name}
-                                alcool={item.alcool}
-                                volume={item.volume}
-                                price={item.price}
-                            />
-                        )}
-                    </div> 
-                ) : 
-                <p className="load">Loading</p>
-                }
-            </div>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel5bh-content"
-            id="panel5bh-header"
-          >
-            <Typography >Nos bières</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            <div>
-                {this.state.beer ? (
-                    <div className="three-col">
-                        {this.state.beer.map(item => 
-                            <AlcoolCard 
-                                key={item.name}
-                                image={item.image}
-                                name={item.name}
-                                alcool={item.alcool}
-                                volume={item.volume}
-                                price={item.price}
-                            />
-                        )}
-                    </div> 
-                ) : 
-                <p className="load">Loading</p>
-                }
-            </div>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel6bh-content"
-            id="panel6bh-header"
-          >
-            <Typography >Nos cocktails</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            <div>
-                {this.state.cocktails ? (
-                    <div className="three-col">
-                        {this.state.cocktails.map(item => 
-                            <AlcoolCard 
-                                key={item.name}
-                                image={item.image}
-                                name={item.name}
-                                alcool={item.alcool}
-                                volume={item.volume}
-                                price={item.price}
-                            />
-                        )}
-                    </div> 
-                ) : 
-                <p className="load">Loading</p>
-                }
-            </div>
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel5bh-content"
+              id="panel5bh-header"
+            >
+              <Typography >Nos bières</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <div>
+                  {this.state.beer ? (
+                      <div className="three-col">
+                          {this.state.beer.map(item => 
+                              <AlcoolCard 
+                                  key={item.name}
+                                  image={item.image}
+                                  name={item.name}
+                                  alcool={item.alcool}
+                                  volume={item.volume}
+                                  price={item.price}
+                              />
+                          )}
+                      </div> 
+                  ) : 
+                  <p className="load">Loading</p>
+                  }
+              </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel6bh-content"
+              id="panel6bh-header"
+            >
+              <Typography >Nos cocktails</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+              <div>
+                  {this.state.cocktails ? (
+                      <div className="three-col">
+                          {this.state.cocktails.map(item => 
+                              <AlcoolCard 
+                                  key={item.name}
+                                  image={item.image}
+                                  name={item.name}
+                                  alcool={item.alcool}
+                                  volume={item.volume}
+                                  price={item.price}
+                              />
+                          )}
+                      </div> 
+                  ) : 
+                  <p className="load">Loading</p>
+                  }
+              </div>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </div>
       </div>
     );
   }

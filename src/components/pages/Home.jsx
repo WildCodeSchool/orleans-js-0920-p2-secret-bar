@@ -15,7 +15,6 @@ export default class Home extends Component {
             <main className="container">
               <Navbar active="accueil" />
               <ControlledCarousel />
-              <ControlledAccordions />
               <Selection />
               <Formevent />
               <ServiceList />
