@@ -8,15 +8,10 @@ import ControlledCarousel from '../carousel/ControlledCarousel';
 import ControlledAccordions from '../menu/Accordion';
 import LogoMini from "../image/logo_mini";
 import { Switch, Route, Link } from 'react-router-dom';
-
-
 import { TimelineLite } from "gsap";
 import anime from "animejs";
-
 import Connexion from "../../identifiants.json";
-
 import "./Home.css";
-
 
 const Home =  props => {
 
@@ -46,7 +41,6 @@ const Home =  props => {
     const setNom = props.setNom;
     const setAlcools = props.setAlcools;
     const setConnected = props.setConnected;
-
     const [identifiant, setIdentifiant] = useState("");
     const [errorForm, setErrorForm] = useState(null);
 

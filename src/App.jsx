@@ -7,6 +7,7 @@ import ControlledAccordion from './components/menu/Accordion';
 import { Switch,Route, Redirect } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import NewId from './components/pages/new-id/NewId';
+import Favicon from 'react-favicon';
 
 function App() {
   const [identifiant, setIdentifiant] = useState("");
@@ -41,6 +42,8 @@ function App() {
       <NewId />
       </Route>
     </Switch>
+      <Favicon url="http://sendpictures.free.fr/up/1605189215.ico" />
+      <Home />
     </main>
   );
 }
