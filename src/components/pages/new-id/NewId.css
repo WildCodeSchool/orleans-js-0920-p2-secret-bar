@@ -1,0 +1,296 @@
+.pageId {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 5%;
+    position: relative;
+}
+
+.pageId:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('https://cutewallpaper.org/21/dark-smoke-wallpaper/Black-Smoke-Wallpaper-Black-Smoke-Background-Hd-Hd-.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -2;
+}
+
+.formulary {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+}
+
+.enigme {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_mobile {
+    display: none;
+}
+
+.title_lock .lock {
+    width: 100%;
+    display: block;
+    fill: var(--third-color);
+}
+
+.title_lock {
+    width: 250px;
+}
+
+.indices_container {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.indices_container .indice {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--second-color);
+    font-family: var(--second-font);
+    font-size: 16px;
+    text-align: center;
+    margin: 0 20px 20px 0;
+}
+
+.indices_container .indice .lock {
+    width: 50%;
+    fill: var(--second-color);
+    opacity: 0.5;
+}
+
+.indices_container .indice span {
+    display: block;
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+    width: 80px;
+    padding: 5px;
+    margin: 0 auto 10px auto;
+}
+
+.pageId h1, .pageId h2 {
+    position: relative;
+    color: var(--second-color);
+    font-size: var(--font-size-title);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.pageId h2 {
+    margin-top: 50px;
+}
+
+.pageId h3 {
+    position: relative;
+    color: var(--second-color);
+    font-size: var(--font-size-main);
+    text-align: center;
+}
+
+.pageId h1:after, .pageId h2:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 128px;
+    background-color: var(--third-color);
+    bottom: -16px;
+    left: calc(50% - 64px)
+}
+
+.code {
+    text-align: center;
+}
+
+.pageId .newId {
+    margin: 15px 0;
+    font-family: var(--second-font);
+    color: var(--second-color);
+}
+
+.pageId label {
+    display: none;
+}
+
+.pageId input, .pageId select {
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--second-font);
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--third-color);
+    color: var(--second-color);
+}
+
+.pageId option {
+    color: var(--main-color);
+}
+
+.pageId input:focus, .pageId select:focus, .pageId .submit:focus {
+    border: 1px solid var(--third-color);
+}
+
+.code_formulary, .data_formulary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit {
+    position: relative;
+    margin-top: 50px;
+    padding: 25px 50px;
+    font-family: var(--second-font);
+    font-weight: 700;
+    color: var(--third-color);
+    text-transform: uppercase;
+    border: 1px solid var(--third-color);
+    transition: color 0.5s ease-in-out;
+    letter-spacing: 2px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.submit::before, .submit::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: var(--third-color);
+    height: 100%;
+    width: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.submit::before {
+    left: 0;
+}
+
+.submit::after {
+    right: 0;
+}
+
+.submit:hover {
+    color: var(--main-color);
+    box-shadow: 0 0 15px 1px var(--third-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.submit:hover::before {
+    width: calc(50% + 1px);
+}
+
+.submit:hover::after {
+    width: 50%;
+    transform: translate(0 -100%);
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .pageId {
+        justify-content: space-between;
+    }
+    .title_lock {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .pageId {
+        justify-content: space-between;
+    }
+    .title_lock {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .enigme {
+        width: 100%;
+        justify-content: center;
+    }
+    .formulary {
+        width: 100%;
+    }
+    .title_lock {
+        width: 100px;
+    }
+    .title_lock {
+        display: none;
+    }
+    .title_mobile {
+        display: block;
+        font-family: var(--main-font);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .pageId {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0 7%;
+    }
+    .formulary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .code_formulary {
+        order: -1;
+    }
+    .title_lock {
+        display: none;
+    }
+    .indices_container .indice .lock {
+        width: 100px;
+    }
+    .title_mobile {
+        display: block;
+        font-family: var(--main-font);
+    }
+    .enigme {
+        width: 90%;
+        justify-content: center;
+    }
+    .indices_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .indices_container .indice {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+    .number1, .number2, .number3 {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+;
