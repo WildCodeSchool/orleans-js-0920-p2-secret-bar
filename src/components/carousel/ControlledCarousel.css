@@ -6,7 +6,6 @@
   align-content: center;
   min-height: 90%;
   font-size: calc(var(--font-size-main) * 3);
-  z-index: 0;
 }
 
 .container {
