@@ -30,7 +30,7 @@ export default class Staff extends Component{
     render(){
         const { name , image , quote } = this.props;
         return(
-            <figure className="StaffCard">
+            <figure className="StaffCard" data-aos="fade-up">
                 <div className="Image" onMouseEnter={this.displayQuote} onMouseLeave={this.unDisplayQuote} style={{backgroundImage: `url(${image})`}}></div>
                 <figcaption>
                     <blockquote className="StaffName">{name}</blockquote>

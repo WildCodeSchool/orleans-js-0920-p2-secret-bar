@@ -11,7 +11,6 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    vertical-align: center;
     width: 90%;
     margin: 0 auto;
 }
@@ -28,5 +27,6 @@
         flex-wrap: wrap;
         min-height: 100vh;
         margin: 0 auto;
+        width: 64%;
     }
 }

@@ -1,4 +1,4 @@
-import SectionTitle from '../section-title/SectionTitle';
+import SectionTitle from '../Section-title/SectionTitle';
 import Service from './Service';
 import './ServiceList.css';
 
@@ -28,7 +28,7 @@ function ServiceList() {
     <div className="ServicesSection">
       <SectionTitle title="Nos Services" color="black" />
 
-      <div className="Services">
+      <div className="Services" data-aos="fade-up">
         {services.map((service) => (
           <Service
             className="ServiceCard"

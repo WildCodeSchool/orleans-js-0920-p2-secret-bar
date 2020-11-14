@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from '../section-title/SectionTitle';
+import SectionTitle from '../Section-title/SectionTitle';
 import Popevent from './Popevent';
 import './Popevent.css';
 
@@ -36,7 +36,7 @@ class Formevent extends React.Component {
 
   render() {
     return (
-      <section className="eventSection">
+      <section className="eventSection" data-aos="fade-up">
         <SectionTitle title="Évènement" color="white" />
         <div className="eventEvent">
           <img
