@@ -4,16 +4,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Dependencies : 
  
-### npm install axios
-### npm install animejs
-### npm install aos
-### npm install gsap
-### npm install @material-ui/core
-### npm install @material-ui/icons
-### npm-install react-scripts
-### npm install react-bootstrap bootstrap
-### npm install react-router-dom
-### npm install react-favicon
+### `npm install axios`
+### `npm install animejs`
+### `npm install aos`
+### `npm install gsap`
+### `npm install @material-ui/core`
+### `npm install @material-ui/icons`
+### `npm-install react-scripts`
+### `npm install react-bootstrap bootstrap`
+### `npm install react-router-dom`
+### `npm install react-favicon`
 
 ## Available Scripts
 
