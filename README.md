@@ -10,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### npm install gsap
 ### npm install @material-ui/core
 ### npm install @material-ui/icons
+### npm-install react-scripts
 ### npm install react-bootstrap bootstrap
 ### npm install react-router-dom
 ### npm install react-favicon
