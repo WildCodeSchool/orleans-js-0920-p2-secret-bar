@@ -1,4 +1,4 @@
-import SectionTitle from '../section-title/SectionTitle';
+import SectionTitle from '../Section-title/SectionTitle';
 import Service from './Service';
 import './ServiceList.css';
 

@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import Navbar from '../Navbar';
-import Footer from '../footer/Footer';
-import ControlledCarousel from '../carousel/ControlledCarousel';
-import ControlledAccordions from '../menu/Accordion';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+import ControlledCarousel from '../Carousel/ControlledCarousel';
+import ControlledAccordions from '../Menu/Accordion';
 
 
 export default class Menu extends Component {

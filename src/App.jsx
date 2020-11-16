@@ -1,18 +1,44 @@
 import { useEffect } from 'react';
 import './App.css';
-import Home from './components/pages/Home';
+import Favicon from 'react-favicon';
+import { Switch, Route } from 'react-router-dom';
+import Menu from './Components/Pages/Menu';
+import NewId from './Components/Pages/New-id/NewId';
+import Home from './Components/Pages/Home';
+import { useEffect, useState } from 'react';
 import Aos from 'aos';
-import 'aos/dist/aos.css';
+
 
 function App() {
+  const [identifiant, setIdentifiant] = useState("");
+  const [nom, setNom] = useState("");
+  const [alcools, setAlcools] = useState("");
+  const [connected, setConnected] = useState(false);
+  
+
   useEffect(() => {
     Aos.init({duration: 1000})
   }, []);
-
   return (
-    <main className="container">
-      <Home />
-    </main>
+    <div className="App">
+      <Favicon url="http://sendpictures.free.fr/up/1605189215.ico" />
+      <Switch>
+        <Route exact path="/">
+          <Home 
+            id={identifiant}
+            nom={nom}
+            alcools={alcools}
+            connected={connected}
+            setId={setIdentifiant}
+            setNom={setNom}
+            setAlcools={setAlcools}
+            setConnected={setConnected}
+          />
+        </Route>
+        <Route path="/carte" component={Menu}></Route>
+        <Route path="/new-id" component={NewId}></Route>
+      </Switch>
+    </div>
   );
 }
 

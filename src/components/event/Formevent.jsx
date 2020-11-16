@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from '../section-title/SectionTitle';
+import SectionTitle from '../Section-title/SectionTitle';
 import Popevent from './Popevent';
 import './Popevent.css';
 
