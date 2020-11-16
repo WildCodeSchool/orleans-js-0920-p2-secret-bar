@@ -1,117 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 .three-col {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
-.div-cocktail-content img, .div-cocktail-content h3, .div-cocktail-content p {
-    width: 60% !important;
+.div-cocktail-content img, .div-cocktail-content h3, .div-cocktail-content p{
+    width: 60%!important;
     text-align: center;
 }
 
 .div-cocktail-content {
     width: 415px;
 }
-
 .div-cocktail-content h3 {
     font-size: 20px;
 }
 
-.card-drink-content p:nth-of-type(2) {
-    margin-bottom: calc(var(--spacing-large) * 1.6);
+.div-cocktail-content p {
+    width: 16px;
 }
-
-.card-drink-content img {
+.div-cocktail-content img{
     margin-bottom: 10px;
-    width: 256px;
 }
 
 .heading {
     font-size: 15px;
     flex-basis: 33.33%;
     flex-shrink: 0;
-}
+  }
 
 .root1 {
+    margin-top: 30px!important;
     width: 90%;
     margin: 0 auto;
-    min-height: 80vh;
-}
-
-.root1 .ServicesTitle {
-    margin-top: calc(var(--spacing-large) * 2);
-}
-
-.root1 .Goldline {
-    width: 320px;
-    margin-bottom: calc(var(--spacing-large) * 3);
-}
+  }
 
 .MuiTypography-body1 {
-    font-family: 'Julius Sans One' !important;
-    padding: var(--spacing) 0;
+    font-family: 'Julius Sans One'!important;
 }
 
 .MuiAccordionSummary-content {
     display: flex;
     justify-content: center;
     background-color: #1d1b19;
-    color: #e9ae60;
+    color: #e9ae60; 
     margin-bottom: 4px;
 }
 
-.MuiAccordionSummary-root {
-    background-color: #1d1b19 !important;
-    border: 1px solid #e9ae60 !important;
+.MuiAccordionSummary-root{
+    background-color: #1d1b19!important;
+    border:1px solid #e9ae60!important;
 }
 
 .MuiPaper-rounded {
-    margin-top: 10px !important;
+    margin-top: 10px!important;
 }
 
 svg.MuiSvgIcon-root {
     display: none;
 }
-
 .div-cocktail-content h3:hover {
-    cursor: pointer;
+    cursor: pointer ;
     caret-color: #e9ae60;
 }
 
-@media screen and (max-width:768px) {
-    .card-drink-container {
-        margin-bottom: -8%;
-    }
-    .alcool-card {
-        width: 50%;
-    }
-    .root1 .ServicesTitle {
-        margin-top: var(--spacing-large);
-    }
-    .root1 .Goldline {
-        width: 307.2px;
-        margin-bottom: var(--spacing-large);
-    }
+.Goldline {
+    width: 250px!important;
+    margin-bottom: 20px;
 }
-
-@media screen and (max-width: 414px) {
-    .card-drink-container {
-        width: 100%;
-    }
-    .card-drink-container img {
-        width: 200px;
-    }
-    .card-drink-content {
-        width: 100%;
-    }
-    .root1 .ServicesTitle {
-        margin-top: 0;
-    }
-    .root1 .Goldline {
-        width: 210px;
+@media screen and (max-width:768px) {
+    .div-cocktail-content {
+        width: 250px!important;
         margin-bottom: 0;
     }
+
+    .div-cocktail-content h3 {
+        font-size: 18px;
+        width: 250px!important;
+    }
+    
+    .div-cocktail-content p {
+        width: 14px;
+    }
+    .div-cocktail-content h3 {
+        margin: 0 auto;
+    }
+
+    .div-cocktail {
+        margin: 0 auto;
+        width: 250px;
+    }
+
 }
