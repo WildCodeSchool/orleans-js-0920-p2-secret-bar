@@ -19,4 +19,5 @@ class AlcoolCard extends React.Component {
     }
 }
 
+
 export default AlcoolCard;

@@ -9,8 +9,6 @@ import AlcoolCard from '../selection/AlcoolCard';
 import './Accordion.css';
 import SectionTitle from '../section-title/SectionTitle';
 
-
-
 class ControlledAccordions extends React.Component {
   constructor(props) {
     super(props);

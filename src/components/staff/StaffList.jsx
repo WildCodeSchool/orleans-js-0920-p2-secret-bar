@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Staff from './Staff';
-import SectionTitle from '../Section-title/SectionTitle';
+import SectionTitle from '../section-title/SectionTitle';
 import './StaffList.css';
 
 const staff = [
