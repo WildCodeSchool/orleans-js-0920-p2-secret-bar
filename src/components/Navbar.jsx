@@ -1,5 +1,6 @@
 import './Navbar.css';
 
+
 function Navbar({ active }) {
   return (
     <nav className="navbar">

@@ -4,7 +4,6 @@ import Footer from '../footer/Footer';
 import ControlledCarousel from '../carousel/ControlledCarousel';
 import ControlledAccordions from '../Menu/Accordion';
 
-
 export default class Menu extends Component {
     render(){
         return (

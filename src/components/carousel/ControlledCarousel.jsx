@@ -16,6 +16,7 @@ const imageBarMobile = 'https://zupimages.net/up/20/45/q4ad.jpg';
 const imageServicesMobile = 'https://zupimages.net/up/20/45/4sra.jpg';
 const imageEventMobile = 'https://zupimages.net/up/20/45/j5eo.jpg';
 
+
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
