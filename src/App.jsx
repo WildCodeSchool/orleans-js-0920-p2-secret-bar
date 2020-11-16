@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
 import './App.css';
 import Favicon from 'react-favicon';
 import { Switch, Route } from 'react-router-dom';
-import Menu from './Components/Pages/Menu';
-import NewId from './Components/Pages/New-id/NewId';
-import Home from './Components/Pages/Home';
+import Menu from './components/pages/Menu';
+import NewId from './components/pages/New-id/NewId';
+import Home from './components/pages/Home';
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
 
