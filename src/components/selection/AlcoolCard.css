@@ -11,15 +11,15 @@ body {
 }
 
 .img-cocktail {
-    width: 320px;
+    width: 400px;
 }
 
-.card-drink-container {
+.div-cocktail {
     display: flex;
     margin-top: 50px;
 }
 
-.card-drink-container h3 {
+.div-cocktail h3 {
     height: 52px;
     width: 400px;
     position: relative;
@@ -52,12 +52,7 @@ body {
     width: 100%;
 }
 
-.desc-cocktail, .price-cocktail{
-    text-align: center;
-    width: 100%;
-}
-
-.card-drink-content {
+.div-cocktail-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,11 +75,7 @@ body {
 
 @media screen and (max-width:768px) {
     .img-cocktail{
-        width: 200px;
-    }
-
-    .card-drink-container{
-        width: 100%;
+        width: 256px;
     }
 
     .div-cocktail{
@@ -96,7 +87,7 @@ body {
         width: 100%;
     }
     
-    .card-drink-content h3 {
+    .div-cocktail-content h3 {
         width: 258px;
         font-size: calc(var(--font-size-main) * 1.2);
         display: flex;
@@ -106,12 +97,6 @@ body {
 
     .lign-cocktail {
         width: 96px;
-    }
-}
-
-@media screen and (max-width: 414px){
-    .img-cocktail{
-        width: 200px;
     }
 }
 
