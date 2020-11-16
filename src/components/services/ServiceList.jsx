@@ -1,4 +1,4 @@
-import SectionTitle from '../Section-title/SectionTitle';
+import SectionTitle from '../section-title/SectionTitle';
 import Service from './Service';
 import './ServiceList.css';
 
@@ -22,6 +22,7 @@ const services = [
       "Nos chauffeurs, triés sur le volet, vous garantissent une conduite douce et agréable afin de vous ramener chez vous dans les meilleures conditions. L'expérience Wild Code Bar à vivre jusqu'à votre domicile...",
   },
 ];
+
 
 function ServiceList() {
   return (

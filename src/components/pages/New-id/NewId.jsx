@@ -16,6 +16,7 @@ class NewId extends React.Component {
       message: ""
     };
 
+    
     this.handleChangeFirstname = this.handleChangeFirstname.bind(this);
     this.handleChangeLastname = this.handleChangeLastname.bind(this);
     this.handleChangeEmail = this.handleChangeEmail.bind(this);

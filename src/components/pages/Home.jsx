@@ -4,14 +4,15 @@ import { TimelineLite } from "gsap";
 import anime from "animejs";
 import Connexion from '../../identifiants.json'
 import LogoMini from '../Images/logo_mini';
-import Navbar from "../Navbar/Navbar";
-import ControlledCarousel from '../Carousel/ControlledCarousel';
-import Selection from "../Selection/Selection";
-import Formevent from "../Event/Formevent";
-import StaffList from "../Staff/StaffList";
-import Footer from "../Footer/Footer";
-import ServiceList from "../Services/ServiceList";
+import Navbar from "../navbar/Navbar";
+import ControlledCarousel from '../carousel/ControlledCarousel';
+import Selection from "../selection/Selection";
+import Formevent from "../event/Formevent";
+import StaffList from "../staff/StaffList";
+import Footer from "../footer/Footer";
+import ServiceList from "../services/ServiceList";
 import './Home.css';
+
 
 const Home =  props => {
 

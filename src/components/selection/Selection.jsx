@@ -2,7 +2,8 @@ import React from 'react'
 import axios from 'axios';
 import './Selection.css';
 import AlcoolCard from './AlcoolCard';
-import SectionTitle from '../Section-title/SectionTitle';
+import SectionTitle from '../section-title/SectionTitle';
+
 
 export default class Selection extends React.Component {
     constructor(props) {
