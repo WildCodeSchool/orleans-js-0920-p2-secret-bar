@@ -192,7 +192,7 @@ return(
     )}
     {connected && (
         <main className="welcome_container" ref={div => (welcome_site = div)}>
-            <Navbar />
+            <Navbar active="accueil"/>
             <ControlledCarousel />
             <Selection />
             <Formevent />

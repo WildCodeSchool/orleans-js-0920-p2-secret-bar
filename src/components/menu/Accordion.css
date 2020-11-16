@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
 .three-col {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +6,7 @@
     margin: 0 auto;
 }
 
-.div-cocktail-content img, .div-cocktail-content h3, .div-cocktail-content p{
+.div-cocktail-content img, .div-cocktail-content h3, .div-cocktail-content p {
     width: 60%!important;
     text-align: center;
 }
@@ -15,6 +14,7 @@
 .div-cocktail-content {
     width: 415px;
 }
+
 .div-cocktail-content h3 {
     font-size: 20px;
 }
@@ -22,7 +22,8 @@
 .div-cocktail-content p {
     width: 16px;
 }
-.div-cocktail-content img{
+
+.div-cocktail-content img {
     margin-bottom: 10px;
 }
 
@@ -30,13 +31,18 @@
     font-size: 15px;
     flex-basis: 33.33%;
     flex-shrink: 0;
-  }
+}
 
 .root1 {
     margin-top: 30px!important;
     width: 90%;
     margin: 0 auto;
-  }
+    min-height: 80vh;
+}
+
+.ServicesTitle {
+    margin-top: calc(var(--spacing-large) * 2);
+}
 
 .MuiTypography-body1 {
     font-family: 'Julius Sans One'!important;
@@ -46,13 +52,13 @@
     display: flex;
     justify-content: center;
     background-color: #1d1b19;
-    color: #e9ae60; 
+    color: #e9ae60;
     margin-bottom: 4px;
 }
 
-.MuiAccordionSummary-root{
+.MuiAccordionSummary-root {
     background-color: #1d1b19!important;
-    border:1px solid #e9ae60!important;
+    border: 1px solid #e9ae60!important;
 }
 
 .MuiPaper-rounded {
@@ -62,8 +68,9 @@
 svg.MuiSvgIcon-root {
     display: none;
 }
+
 .div-cocktail-content h3:hover {
-    cursor: pointer ;
+    cursor: pointer;
     caret-color: #e9ae60;
 }
 
@@ -71,27 +78,34 @@ svg.MuiSvgIcon-root {
     width: 250px!important;
     margin-bottom: 20px;
 }
+
+.aos-init {
+    margin-bottom: calc(var(--spacing-large));
+}
+
 @media screen and (max-width:768px) {
     .div-cocktail-content {
         width: 250px!important;
-        margin-bottom: 0;
+        margin: 0 auto;
     }
-
     .div-cocktail-content h3 {
         font-size: 18px;
         width: 250px!important;
     }
-    
     .div-cocktail-content p {
         width: 14px;
     }
     .div-cocktail-content h3 {
         margin: 0 auto;
     }
-
     .div-cocktail {
         margin: 0 auto;
-        width: 250px;
+        width: 100%;
     }
-
+    .img-cocktail{
+        margin-top: calc(var(--spacing-large) * 1.5);
+    }
+    .ServicesTitle {
+        margin-top: calc(var(--spacing-large));
+    }
 }
