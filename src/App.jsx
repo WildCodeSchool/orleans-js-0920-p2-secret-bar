@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './App.css';
 import Favicon from 'react-favicon';
 import { Switch, Route } from 'react-router-dom';
