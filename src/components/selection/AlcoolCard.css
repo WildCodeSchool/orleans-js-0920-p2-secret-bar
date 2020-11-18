@@ -60,19 +60,6 @@ body {
     font-family: 'Julius Sans One' ;
 }
 
-
-/* .lign-cocktail {
-    background-color: #e9ae60;
-    width: 128px;
-    height: 4px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
-} */
-
 @media screen and (max-width:768px) {
     .img-cocktail{
         width: 256px;
@@ -83,6 +70,7 @@ body {
     }
 
     .div-cocktail-content{
+        margin-top: var(--spacing-large);
         margin-bottom: calc(var(--spacing-large) * 1.5);
         width: 100%;
     }

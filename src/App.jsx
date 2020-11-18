@@ -6,6 +6,7 @@ import NewId from './components/pages/New-id/NewId';
 import Home from './components/pages/Home';
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
