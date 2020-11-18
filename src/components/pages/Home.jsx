@@ -104,8 +104,15 @@ const Home =  props => {
 
 
     const handleChangeId = event => {
-        setIdentifiant(event.target.value);
-      };
+      setIdentifiant(event.target.value);
+
+      Connexion.forEach(person => {
+        const newPerson = person.id.substring(0, person.id.length - 1);
+        if(newPerson === identifiant){
+          setCustomer(person);
+        }
+      })
+    };
 
     const valideForm = () => {
         
@@ -114,7 +121,6 @@ const Home =  props => {
                 setId(identifiant);
                 setNom(element.name);
                 setAlcools(element.alcools);
-                console.log("id :" + id);
             animEntreeSite
             .to(phrase, 0.5, { opacity: 0, y: 25 })
             .to(btnEnter, 0.5, { opacity: 0, y: 25 }, "-=0.2")
@@ -140,13 +146,24 @@ const Home =  props => {
             .play();
             }
         });
-        console.log("id :" +id);
         if(id !== ""){
             setErrorForm("Mauvais identifiant");
         }
-    };        
-    
+    };
 
+    const useLocalStorage = (key, defaultValue) => {
+      const stored = localStorage.getItem(key);
+      const initial = stored ? JSON.parse(stored) : defaultValue;
+      const [value, setValue] = useState(initial);
+    
+      useEffect(() => {
+        localStorage.setItem(key, JSON.stringify(value));
+      }, [key, value]);
+    
+      return [value, setValue];
+    };
+
+    const [customer, setCustomer] = useLocalStorage("customer", {})
 
 return( 
     <div className="Home">
