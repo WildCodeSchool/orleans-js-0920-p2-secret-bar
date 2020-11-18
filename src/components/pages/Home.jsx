@@ -7,6 +7,7 @@ import StaffList from '../staff/StaffList';
 import Footer from '../footer/Footer';
 import ControlledCarousel from '../carousel/ControlledCarousel';
 import ControlledAccordions from '../menu/Accordion';
+import Portefolio from '../livreDor/Portefolio';
 
 
 export default class Home extends Component {
@@ -21,6 +22,7 @@ export default class Home extends Component {
               <ServiceList />
               <StaffList />
               <Footer />
+              <Portefolio />
             </main>
         );
     }

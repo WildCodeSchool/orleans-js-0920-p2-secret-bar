@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
-  .notice{
+.notice{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     border-top:solid rgb(233,174,96) 1px;
-    border-bottom:solid rgb(233,174,96) 1px;
     width: 50vw;
 }
 .Note{
@@ -34,21 +35,31 @@
 }
 
 .more{
-  font-family: "Julius Sans One";
+  background-color: var(--third-color);
   padding-top:5px ;
   padding-bottom:5px;
   margin-top: 10px;
-  margin-left: 44vw;
-  border: 1 black;
+  margin-left: 46vw;
+  margin-bottom: 20px;
   cursor: pointer;
+  font-family: var(--main-font);
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: 1px solid var(--third-color);
+  transition: all 0.35s ease-in-out;
 }
 
 .more:hover{
-  box-shadow: 6px 6px 3px rgb(233, 174, 96);
-  transform:scale(1.2) 0.5s;
+  background-color: var(--main-color);
+  color: var(--third-color);
+  box-shadow: 0 0 15px var(--third-color);
 }
 
-@font-face{
-  font-family: "Julius Sans One";
-  src:url('Julius_Sans_One/JuliusSansOne-Regular.ttf');
+.moreCaption{
+  margin-left: auto;
+  margin-right: auto;
+  width: 49em;
+  
 }
+
+
