@@ -103,5 +103,20 @@
       "name": "Madame BOURGUIGNON D'HERBIGNY",
       "id": "bambino",
       "alcools": ["rhum", "tequilla", "champagne"]
+    },
+    {
+      "name": "Madame REBEYROLLE",
+      "id": "rebeyrolle",
+      "alcools": ["rhum", "vin rouge", "champagne"]
+    },
+    {
+      "name": "Monsieur FLICHY",
+      "id": "flichy",
+      "alcools": ["bière brune", "vin rouge", "rhum"]
+    },
+    {
+      "name": "Madame FRARIN",
+      "id": "frarin",
+      "alcools": ["bière blonde", "vodka", "rhum"]
     }
   ]
