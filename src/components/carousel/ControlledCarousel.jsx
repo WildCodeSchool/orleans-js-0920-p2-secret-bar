@@ -24,6 +24,8 @@ function ControlledCarousel() {
     setIndex(selectedIndex);
   };
 
+  const customer = JSON.parse(localStorage.getItem("customer"));
+
   return (
     <div className="container">
       <div className="carousel-desktop">
@@ -37,7 +39,7 @@ function ControlledCarousel() {
             <img className="d-block w-100" src={imageLounge} alt="Lounge" />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <p className="p-carousel">{`Un plaisir de vous revoir ${customer.name}`}</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -78,7 +80,7 @@ function ControlledCarousel() {
             />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <p className="p-carousel">{`Un plaisir de vous revoir ${customer.name}`}</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -123,7 +125,7 @@ function ControlledCarousel() {
             />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <p className="p-carousel">{`Un plaisir de vous revoir ${customer.name}`}</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
