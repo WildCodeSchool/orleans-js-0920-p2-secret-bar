@@ -46,6 +46,12 @@
   color: rgb(214, 48, 48);
 }
 
+.welcome .accept {
+  padding-top: 25px;
+  text-align: center;
+  color: lightgreen;
+}
+
 .welcome .form_welcome {
   margin: 0 auto;
 }
