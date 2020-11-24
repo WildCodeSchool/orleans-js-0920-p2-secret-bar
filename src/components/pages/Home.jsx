@@ -43,7 +43,7 @@ const Home =  props => {
     const setAlcools = props.setAlcools;
     const setConnected = props.setConnected;
     const [identifiant, setIdentifiant] = useState("");
-    const [errorForm, setErrorForm] = useState(null);
+    const [errorForm, setErrorForm] = useState("");
 
     useEffect(()=>{
         animation = anime({
@@ -116,11 +116,13 @@ const Home =  props => {
 
     const valideForm = () => {
         
+      setErrorForm("Mauvais identifiant");
         Connexion.forEach(element => {
             if(element.id === identifiant){
                 setId(identifiant);
                 setNom(element.name);
                 setAlcools(element.alcools);
+                setErrorForm("Identifiant accepté");
             animEntreeSite
             .to(phrase, 0.5, { opacity: 0, y: 25 })
             .to(btnEnter, 0.5, { opacity: 0, y: 25 }, "-=0.2")
@@ -146,9 +148,6 @@ const Home =  props => {
             .play();
             }
         });
-        if(id !== ""){
-            setErrorForm("Mauvais identifiant");
-        }
     };
 
     const useLocalStorage = (key, defaultValue) => {
@@ -179,7 +178,7 @@ return(
             </div>
 
             <form className="form_welcome" ref={div => (formAcc = div)}>
-            <div className="error"> {errorForm}</div>
+            <div className={errorForm === "Identifiant accepté" ? "accept" : "error"}> {errorForm}</div>
             <label htmlFor="identifiant">Identifiant: </label>
             <input
                 name="identifiant"
