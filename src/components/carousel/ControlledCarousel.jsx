@@ -16,12 +16,15 @@ const imageBarMobile = 'https://zupimages.net/up/20/45/q4ad.jpg';
 const imageServicesMobile = 'https://zupimages.net/up/20/45/4sra.jpg';
 const imageEventMobile = 'https://zupimages.net/up/20/45/j5eo.jpg';
 
+
 function ControlledCarousel() {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex);
   };
+
+  const customer = JSON.parse(localStorage.getItem("customer"));
 
   return (
     <div className="container">
@@ -36,7 +39,7 @@ function ControlledCarousel() {
             <img className="d-block w-100" src={imageLounge} alt="Lounge" />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <p className="p-carousel">{`Un plaisir de vous revoir ${customer.name}`}</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -77,7 +80,7 @@ function ControlledCarousel() {
             />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <p className="p-carousel">{`Un plaisir de vous revoir ${customer.name}`}</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -122,7 +125,7 @@ function ControlledCarousel() {
             />
             <Carousel.Caption>
               <h3 className="h3-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
-              <p className="p-carousel">Un plaisir de vous revoir Monsieur</p>
+              <p className="p-carousel">{`Un plaisir de vous revoir ${customer.name}`}</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

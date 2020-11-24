@@ -6,7 +6,7 @@ import './StaffList.css';
 const staff = [
     {
         name: "♕ Mr Louis D. ♕",
-        image: "https://zupimages.net/up/20/46/yev1.jpg",
+        image: "https://zupimages.net/up/20/45/59pn.png",
         quote: '" Serveur du mois depuis l\'ouverture, je saurai répondre à toutes vos demandes dans les plus brefs délais. "'
     },
     {

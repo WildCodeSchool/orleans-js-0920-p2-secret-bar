@@ -25,9 +25,9 @@ export default class Selection extends React.Component {
         .get('https://cocktailsprojectapi.herokuapp.com/cocktails')
         .then(res => res.data)
         .then(data => {
-            this.setState({ cocktail: data.filter(cocktail => cocktail.category !== "cocktail")[Math.floor(Math.random() * 42)] });
-            this.setState({ cocktail1: data.filter(cocktail => cocktail.name !== this.state.cocktail.name && cocktail.category !== "cocktail")[Math.floor(Math.random() * 42)]});
-            this.setState({ cocktail2: data.filter(cocktail => cocktail.name !== this.state.cocktail.name && cocktail.name !== this.state.cocktail1.name && cocktail.category !== "cocktail")[Math.floor(Math.random() * 42)] });
+            this.setState({ cocktail: data.filter(cocktail => cocktail.category !== "cocktail") });
+            this.setState({ cocktail1: data.filter(cocktail => cocktail.name !== this.state.cocktail.name && cocktail.category !== "cocktail")});
+            this.setState({ cocktail2: data.filter(cocktail => cocktail.name !== this.state.cocktail.name && cocktail.name !== this.state.cocktail1.name && cocktail.category !== "cocktail") });
         })
         .catch(err => {
             console.error(err);

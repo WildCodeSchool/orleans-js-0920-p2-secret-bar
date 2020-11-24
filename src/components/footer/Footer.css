@@ -25,6 +25,7 @@
 @media screen and (max-width: 414px){
     .Footer{
         width: 72%;
+        margin-top: -12%;
     }
     .Footer .Credits{
         font-size: calc(var(--font-size-main) * 0.8);

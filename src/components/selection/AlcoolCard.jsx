@@ -2,9 +2,7 @@ import React from 'react';
 import './AlcoolCard.css';
 
 class AlcoolCard extends React.Component {
-    constructor(props){
-        super(props);
-    }
+
     render(){
         const {image, name, alcool, volume, price} = this.props ;
         return (
@@ -20,5 +18,6 @@ class AlcoolCard extends React.Component {
         )
     }
 }
+
 
 export default AlcoolCard;
