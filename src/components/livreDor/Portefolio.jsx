@@ -1,6 +1,7 @@
 import Opinion from './Opinion.jsx';
 import React from 'react';
 import './Portefolio.css';
+import Navbar from '../Navbar/Navbar';
 
 class Portefolio extends React.Component{
     constructor(props){
@@ -12,6 +13,8 @@ class Portefolio extends React.Component{
     render(){
 
         return(
+            <div>
+            <Navbar active="livre" />
             <div className="integral">
             <h1>Full Moon Party</h1>
             <div className="up">
@@ -64,6 +67,7 @@ class Portefolio extends React.Component{
             Cette énorme fête organisée sur le thême de la <i>Full Moon</i> était mémorable , des cocktails spéciaux ont était préparé a cette occasion là, DJ Cogno était au platine ! Et vous avez loupé ça ? Ne vous en faites pas , c'est photos aiguillerons votre imaginations, dans l'éspoir de vous voir à là prochaine occasion.         </p>
             <div className="opinion">
             <Opinion />
+            </div>
             </div>
             </div>
             );
