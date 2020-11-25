@@ -7,30 +7,30 @@ const users = [
     {
       name: 'Robert Reyes',
       avatar: 'https://randomuser.me/api/portraits/men/28.jpg',
-      commentaire: 'splendide',
+      comment: 'splendide',
       note:3,
     },
     {
       name: 'Nellie Caldwell',
-      commentaire: 'La soirée était formidable',
+      comment: 'La soirée était formidable',
       avatar: 'https://randomuser.me/api/portraits/women/17.jpg',
       online: true,
     },
     {
       name: 'Vernon Mason',
-      commentaire: 'La soirée était formidable',
+      comment: 'La soirée était formidable',
       avatar: 'https://randomuser.me/api/portraits/men/84.jpg',
       online: true
     },
     {
       name: 'Erica Hunt',
-      commentaire: "j'ai bien cru que je n'allais jamais rentrer chez moi rejoindre ma femme, je suis tombé amoureux 5 fois.",
+      comment: "j'ai bien cru que je n'allais jamais rentrer chez moi rejoindre ma femme, je suis tombé amoureux 5 fois.",
       avatar: 'https://randomuser.me/api/portraits/women/87.jpg',
       online: false
     },
     {
       name: 'Juanita Phillips',
-      commentaire: 'je risque pas de louper la prochaine',
+      comment: 'je risque pas de louper la prochaine',
       avatar: 'https://randomuser.me/api/portraits/women/55.jpg',
       online: true
     }
@@ -48,16 +48,16 @@ class Opinion extends React.Component{
         return(
             <div>
             <div className="tout">
-                <div className='notice'>
+                <div className='noti'>
                     
-                    <div className='texte'>
+                    <div className='text'>
                         <div className="Note" id='note'>
                             <span class="star">&#x2605;</span>
                             <span class="star">&#x2605;</span>
                             <span class="star">&#x2605;</span>
                             <span class="star">&#x2605;</span>
                         </div>
-                        <p className='citation'>"<i>j'ai passé une bonne soirée</i>"</p>
+                        <p className='quote'>"<i>j'ai passé une bonne soirée</i>"</p>
                     </div>
                     
                         <p className='blase'><small>jordy ngoma</small></p>
@@ -76,7 +76,7 @@ class Opinion extends React.Component{
                         <span class="star">&#x2605;</span>
                         <span class="star">&#x2605;</span>
                     </div>
-                    <p className='citation'>"<i>{item.commentaire}</i>"</p>
+                    <p className='citation'>"<i>{item.comment}</i>"</p>
                 </div>
                 </div>
                     <p className='blase'><small>{item.name}</small></p>

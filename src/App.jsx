@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Menu from './components/pages/Menu';
 import NewId from './components/pages/New-id/NewId';
 import Home from './components/pages/Home';
-import Portefolio from './components/livreDor/Portefolio'
+import Portfolio from './components/visitorsbook/Portfolio'
 import { useEffect, useState } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -37,7 +37,7 @@ function App() {
         </Route>
         <Route path="/carte" component={Menu}></Route>
         <Route path="/new-id" component={NewId}></Route>
-        <Route path="/livre-d-or" component={Portefolio}><Portefolio/></Route>
+        <Route path="/livre-d-or" component={Portfolio}><Portfolio/></Route>
       </Switch>
     </div>
   );
