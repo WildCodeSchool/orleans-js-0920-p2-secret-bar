@@ -200,7 +200,7 @@ return(
             <p>
                 Vous n'avez pas encore d'identifiant, dommage !{"  "}
 
-                <span className="without_mp_dark"><Link to="/new-id"> En demander un ;)</Link></span>
+                <span className="without_mp_dark"><Link to="/new-id"> En demander un </Link></span>
             </p>
             </div>
         </div>
