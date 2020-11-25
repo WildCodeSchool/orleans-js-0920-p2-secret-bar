@@ -1,6 +1,6 @@
-import './FakeCarousel.css';
+import './Header.css';
 
-function FakeCarousel(props){
+function Header(props){
     return (
         <div className="container-fakeCarousel">
             <h3 className="h3-fake-carousel"><span className="gold">W</span>ild <span className="gold">C</span>ode <span className="gold">B</span>ar</h3>
@@ -11,4 +11,4 @@ function FakeCarousel(props){
     )
 }
 
-export default FakeCarousel;
+export default Header;
