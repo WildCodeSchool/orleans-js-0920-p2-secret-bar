@@ -29,6 +29,27 @@ body {
     font-family: 'Julius Sans One' ;
     text-align: center;
     margin-top: 16px;
+    font-weight: bolder;
+    font-size: calc(var(--font-size-main) * 1.5);
+}
+
+.div-cocktail h3::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 128px;
+    background-color: var(--third-color);
+    bottom: -16px;
+    left: calc(50% - 64px);
+}
+
+.desc-cocktail{
+    margin-top: var(--spacing-large);
+}
+
+.desc-cocktail, .price-cocktail{
+    text-align: center;
+    width: 100%;
 }
 
 .div-cocktail-content {
@@ -39,31 +60,24 @@ body {
     font-family: 'Julius Sans One' ;
 }
 
-
-.lign-cocktail {
-    background-color: #e9ae60;
-    width: 128px;
-    height: 4px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin: 0 auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
 @media screen and (max-width:768px) {
     .img-cocktail{
         width: 256px;
     }
 
+    .div-cocktail{
+        width: 100%;
+    }
+
     .div-cocktail-content{
+        margin-top: var(--spacing-large);
         margin-bottom: calc(var(--spacing-large) * 1.5);
+        width: 100%;
     }
     
     .div-cocktail-content h3 {
         width: 258px;
-        font-size: 20px;
+        font-size: calc(var(--font-size-main) * 1.2);
         display: flex;
         align-items: center;
         justify-content: center;

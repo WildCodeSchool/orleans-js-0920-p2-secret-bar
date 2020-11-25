@@ -1,0 +1,33 @@
+import { Component } from "react";
+import { useEffect,useState } from 'react';
+import { Link } from 'react-router-dom';
+import { TimelineLite } from "gsap";
+import anime from "animejs";
+import Connexion from '../../identifiants.json'
+import LogoMini from '../Images/logo_mini';
+import Navbar from "../Navbar/Navbar";
+import ControlledCarousel from '../Carousel/ControlledCarousel';
+import Selection from "../Selection/Selection";
+import Formevent from "../Event/Formevent";
+import StaffList from "../Staff/StaffList";
+import Footer from "../Footer/Footer";
+import ServiceList from "../Services/ServiceList";
+
+
+class Home extends Component {
+    render(){
+        return (
+            <main className="container">
+                <Navbar />
+                <ControlledCarousel />
+                <Selection />
+                <Formevent />
+                <ServiceList />
+                <StaffList />
+                <Footer />
+            </main>
+        )
+    }
+
+}
+export default Home;

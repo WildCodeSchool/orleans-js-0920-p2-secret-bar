@@ -22,12 +22,12 @@
 
 .Goldline {
   width: 32%;
-  margin-top: -16px;
+  margin-top: -8px;
 }
 
-@media screen and ((min-width: 768px) and (max-width: 1024px)) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .HeadTitle {
-    margin-top: var(--spacing-large);
+    margin-top: calc(var(--spacing-large) * 2);
     margin-bottom: calc(var(--spacing-large) * 2);
   }
   .ServicesTitle {
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 414px) {
   .HeadTitle {
-    margin-top: var(--spacing-large);
+    margin-top: calc(var(--spacing-large) * 2);
     margin-bottom: calc(var(--spacing-large) * 1.6);
   }
   .ServicesTitle {

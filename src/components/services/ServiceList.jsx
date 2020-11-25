@@ -23,12 +23,13 @@ const services = [
   },
 ];
 
+
 function ServiceList() {
   return (
     <div className="ServicesSection">
       <SectionTitle title="Nos Services" color="black" />
 
-      <div className="Services">
+      <div className="Services" data-aos="fade-up">
         {services.map((service) => (
           <Service
             className="ServiceCard"

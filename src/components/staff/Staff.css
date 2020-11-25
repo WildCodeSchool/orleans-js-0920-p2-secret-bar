@@ -31,7 +31,7 @@
 }
 
 figcaption {
-    background: none;
+    background: none!important;
 }
 
 .StaffCard .StaffName {
@@ -80,15 +80,15 @@ figcaption {
         width: 80%;
     }
     .StaffCard .Image {
-        height: 400px;
-        width: 400px;
+        height: 320px;
+        width: 320px;
     }
     .StaffCard .StaffQuote {
         display: none;
     }
     .MobileQuote{
         display: flex;
-        margin-bottom: calc(var(--spacing-large) * 1.5);
+        margin-bottom: calc(var(--spacing-large) * 2);
     }
 }
 

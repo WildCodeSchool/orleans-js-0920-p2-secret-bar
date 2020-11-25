@@ -3,20 +3,21 @@
 .menu {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     width: 660px;
 }
 
 .navbar {
-    height: 64px;
+    height: 72px;
     background-color: var(--main-color);
     width: 100%;
     position: fixed !important;
     z-index: 999;
     border-bottom: 2px solid var(--third-color);
     display: block !important;
-    padding:0 !important;
+    padding: 0 !important;
 }
 
 .contain {
@@ -24,14 +25,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 56px;
+    height: 64px;
 }
 
-.navbar a {
+.menu a {
     padding-top: 18px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 12px;
+    margin-left: 32px;
     font-family: Julius Sans One;
     color: var(--second-color);
     text-decoration: none;
@@ -39,9 +41,9 @@
     transition: background-size .5s;
 }
 
-.navbar a:hover {
+.navbar .menu a:hover {
     background-size: 100% 100%;
-    color :var(--third-color);
+    color: var(--third-color);
     text-decoration: none;
 }
 
@@ -57,8 +59,14 @@
     display: none;
 }
 
+.active a {
+    background-size: 100% 100%;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
 @media screen and (max-width:768px) {
-    .contain{
+    .contain {
         margin: 0 var(--spacing-large);
     }
 }
@@ -77,11 +85,12 @@
         border-bottom: none;
         border-top: 2px solid var(--third-color);
     }
-    .contain{
+    .contain {
         background-color: var(--main-color);
     }
     .menu--logo {
         display: flex;
+        align-items: center;
     }
     .logoCart {
         margin-top: 13px;
