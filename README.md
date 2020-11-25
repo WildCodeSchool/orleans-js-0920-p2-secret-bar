@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependencies
+
+###
+
+npm install axios animejs aos gsap @material-ui/core @material-ui/icons react-bootstrap bootstrap react-router-dom react-favicon react-scripts
+
 ## Available Scripts
 
 In the project directory, you can run:
