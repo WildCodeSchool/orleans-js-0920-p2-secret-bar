@@ -7,10 +7,10 @@ import SectionTitle from '../section-title/SectionTitle';
 import Footer from "../footer/Footer";
 import Header from '../header/Header';
 
-var flkty = new Flickity('.main-gallery', {
+var flkty = new Flickity('.main-gallery' ,{
     cellAlign: 'left',
     contain: true
-});
+})
 
 class Portfolio extends React.Component {
     constructor(props) {
@@ -41,16 +41,7 @@ class Portfolio extends React.Component {
                                 <img className="photos" src='https://zupimages.net/up/20/46/pdy1.jpg' alt="piscine" />
                             </div>
                         </div>
-                        <div className="panelPicture" data-aos="fade-up">
-                            <div class="gallery js-flickity">
-                                <img src='https://zupimages.net/up/20/46/5ezf.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/43um.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/np7z.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/dhs0.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/pdy1.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/zfi0.jpg' class="gallery-cell"></img>
-                            </div>
-                        </div>
+                        
                         <button id="btnPopup" class="btnPopup" data-aos="fade-up"
                             onClick={() => {
                                 const newOnline = !this.state.online;

@@ -9,29 +9,15 @@
   color: goldenrod;
 }
 
-.texte {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.first-comment {
-  border-top: 1px solid rgb(233, 174, 96);
-  margin: 0 10.2%;
-  margin-top: 16px;
-  padding-top: 16px;
-}
 
 .notice {
-  margin-bottom: calc(var(--spacing-large) * 2);
+  border-top: solid rgb(233, 174, 96) 1px;
+  margin-bottom:10px;
 }
 
 .blase {
   font-family: "Julius Sans One";
   text-align: right;
-  width: 50%;
   margin: 0 auto;
 }
 
@@ -40,17 +26,29 @@
   text-align: left;
 }
 
+.avis{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .more {
+  
+  display:flex;
+  justify-content: center;
   background-color: var(--third-color);
+  font-size: var(--font-size-main);
   padding: var(--spacing-medium);
-  width: 12%;
   cursor: pointer;
   font-family: var(--main-font);
   font-weight: bolder;
   text-transform: uppercase;
   border: 1px solid var(--third-color);
   transition: all 0.35s ease-in-out;
-  margin-bottom: calc(var(--spacing-large) * 2);
+  width: 25%;
+  margin: 0 auto;
+  margin-top: calc(var(--spacing-large) * 2);
+  
 }
 
 .more:hover {
@@ -60,30 +58,58 @@
 }
 
 .moreCaption {
+  
   margin-left: auto;
   margin-right: auto;
   width: 80%;
 }
+.noticefirst-comment{ 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  
+  }
+@media screen and (min-width: 415px) and (max-width: 768px) {
+
+}
+
 
 @media screen and (max-width: 414px) {
   .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 10px;
-    margin-left: 1vw;
-    margin-bottom: 100px;
+    width: 32%;
+    margin-bottom: 10px;
     font-size: 13px;
+    
+  }
+  .avis{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blase {
+    
+    font-family: "Julius Sans One";
+    text-align: right;
+    width: 50%;
+    margin-left: 140px;
   }
   .morecaption {
     font-size: 13px;
-    padding-right: 0px;
-    width: 10em;
+    width: 80%;
   }
   .texte {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin-left: -10px;
+    
   }
   .quote {
     font-family: "Julius Sans One";
@@ -94,15 +120,15 @@
   .citation {
     font-family: "Julius Sans One";
     font-size: 12px;
-    margin-right: 25px;
-    padding-right: 20px;
+    text-align: left;
   }
   .notice {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
     border-top: solid rgb(233, 174, 96) 1px;
-    width: 80vw;
-    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .noticefirst-comment{ 
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
   }
 }

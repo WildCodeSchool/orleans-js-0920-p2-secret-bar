@@ -29,8 +29,9 @@ class Opinion extends React.Component{
     }
     render(){
         return(
-            <div>
-                <div className='notice first-comment'>
+            <div className="avis">
+            <div className="moreCaption">
+                <div className='notice'>
                     <div className='att'>
                         <div className='texte'>
                             <div className="Note" id='note'>
@@ -44,7 +45,7 @@ class Opinion extends React.Component{
                         <p className='blase'><small>Jordy Ngoma</small></p>
                     </div>
                 </div>
-
+                </div>
                 <div>
                     <div className={this.state.online ? "moreCaption":"status"}>
                         {users.map(item => (
@@ -66,6 +67,7 @@ class Opinion extends React.Component{
                         ))}
                     </div>
                 </div>
+                
                 <button className="more" onClick = { () => {
                     const newOnline = !this.state.online;
                         this.setState({ online : newOnline });
