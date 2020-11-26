@@ -54,6 +54,8 @@ hr {
 }
 
 .btnPopup {
+    display:flex;
+    justify-content: center;
     background-color: var(--third-color);
     font-size: var(--font-size-main);
     padding: var(--spacing-medium);
@@ -63,7 +65,7 @@ hr {
     text-transform: uppercase;
     border: 1px solid var(--third-color);
     transition: all 0.35s ease-in-out;
-    width: 16%;
+    width: 25%;
     margin: 0 auto;
     margin-top: calc(var(--spacing-large) * 2);
 }
@@ -169,16 +171,17 @@ hr {
         margin-bottom: 46px;
     }
     .btnPopup {
+        display:flex;
+        justify-content: center;
         margin-top: 40px;
         width: 50%;
-        margin-left: 26vw;
         font-size: 13px;
     }
     .galerie img {
-        width: 65px;
-        height: 55px;
+        width: 100%;
+        height: 100%;
     }
-    .photos1:hover {
+    /*.photos1:hover {
         transition: transform 0.25s ease;
         transform: translate(70px, 50px) scale(4);
     }
@@ -225,16 +228,23 @@ hr {
     .photos11:hover {
         transition: transform 0.25s ease;
         transform: translate(0px, 50px) scale(4);
+    }*/
+    .HeadTitle{
+        margin: 0px;
     }
     .galerie {
-        display: grid;
-        grid-template-columns: repeat(3, 70px);
-        grid-template-rows: repeat(4, 70px);
-        margin-left: 23px;
+        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        z-index: 5;
     }
+    
     .popu {
         width: 90.3%;
-        margin-left: 14px;
     }
     .galerietitle {
         font-size: 15px;

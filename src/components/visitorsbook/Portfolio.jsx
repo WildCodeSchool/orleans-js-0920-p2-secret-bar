@@ -3,28 +3,43 @@ import React from 'react';
 import './Portfolio.css';
 import Navbar from '../Navbar/Navbar';
 import Flickity from 'flickity';
-import ControlledCarousel from '../carousel/ControlledCarousel';
 import SectionTitle from '../section-title/SectionTitle';
 import Footer from "../footer/Footer";
 
 var flkty = new Flickity( '.main-gallery', {
     cellAlign: 'left',
     contain: true
-});
 
+});
+const littleCarousel = document.getElementsByClassName(".panelPicture");
+/*<div className="panelPicture" data-aos="fade-up">
+                            <div class="gallery js-flickity">
+                                <img src='https://zupimages.net/up/20/46/5ezf.jpg' class="gallery-cell"></img>
+                                <img src='https://zupimages.net/up/20/46/43um.jpg' class="gallery-cell"></img>
+                                <img src='https://zupimages.net/up/20/46/np7z.jpg' class="gallery-cell"></img>
+                                <img src='https://zupimages.net/up/20/46/dhs0.jpg' class="gallery-cell"></img>
+                                <img src='https://zupimages.net/up/20/46/pdy1.jpg' class="gallery-cell"></img>
+                                <img src='https://zupimages.net/up/20/46/zfi0.jpg' class="gallery-cell"></img>
+                            </div>
+                        </div>
+*/
 class Portfolio extends React.Component{
+    
+    
     constructor(props){
         super(props);
         this.state = {
             online:true
         };
     }
+
+   
+
     render(){
 
         return(
             <div>
                 <Navbar active="livre" />
-                <ControlledCarousel />
 
                 <div className="content-book">
                     <div className="integral">
@@ -36,16 +51,7 @@ class Portfolio extends React.Component{
                                 <img className="photos" src='https://zupimages.net/up/20/46/pdy1.jpg' alt="piscine"/>
                             </div>
                         </div>
-                        <div className="panelPicture" data-aos="fade-up">
-                            <div class="gallery js-flickity">
-                                <img src='https://zupimages.net/up/20/46/5ezf.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/43um.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/np7z.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/dhs0.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/pdy1.jpg' class="gallery-cell"></img>
-                                <img src='https://zupimages.net/up/20/46/zfi0.jpg' class="gallery-cell"></img>
-                            </div>
-                        </div>
+                        
                         <button id="btnPopup" class="btnPopup" data-aos="fade-up"
                             onClick = { () => {
                                 const newOnline = !this.state.online;
