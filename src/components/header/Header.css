@@ -20,13 +20,21 @@
         align-items: center;
       }
 
-    .h3-fake-carousel {
+    .h3-fake-carousel  {
         position: absolute;
         font-family: var(--main-font);
         font-size: calc(var(--font-size-main) * 6);
         color: var(--second-color);
         text-transform: capitalize;
       }
+
+    .p-fake-carousel {
+        position: absolute;
+        margin-top: 160px;
+        font-family: var(--second-font);
+        font-size: var(--font-size-title);
+        color: var(--second-color);
+    }  
 
       .gold {
         color: var(--third-color);
@@ -55,10 +63,19 @@
     .h3-fake-carousel {
         position: absolute;
         font-family: var(--main-font);
-        font-size: calc(var(--font-size-main) * 5)!important;
+        font-size: 64px;
         color: var(--second-color);
         text-transform: capitalize;
       }
+
+      .p-fake-carousel {
+        position: absolute;
+        margin-top: 160px;
+        font-family: var(--second-font);
+        font-size: 32px;
+        color: var(--second-color);
+        text-align: center;
+    } 
 }
 
 @media screen and (max-width: 425px) {
@@ -72,7 +89,7 @@
 
     .imgFakeCarouselMobile {
         width: 100%;
-        height: 90vh;
+        height: 95vh;
     }
     
     .container-fakeCarousel {
@@ -84,8 +101,17 @@
     .h3-fake-carousel {
         position: absolute;
         font-family: var(--main-font);
-        font-size: calc(var(--font-size-main) * 2)!important;
+        font-size: 48px;
         color: var(--second-color);
         text-transform: capitalize;
     }
+
+    .p-fake-carousel {
+        position: absolute;
+        margin-top: 130px;
+        font-family: var(--second-font);
+        font-size: 24px;
+        color: var(--second-color);
+        text-align: center;
+    } 
 }
