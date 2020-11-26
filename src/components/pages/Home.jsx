@@ -114,7 +114,8 @@ const Home =  props => {
       })
     };
 
-    const valideForm = () => {
+    const valideForm = (e) => {
+      e.preventDefault();
         
       setErrorForm("Mauvais identifiant");
         Connexion.forEach(element => {
@@ -177,7 +178,7 @@ return(
             <LogoMini />
             </div>
 
-            <form className="form_welcome" ref={div => (formAcc = div)}>
+            <form className="form_welcome" onSubmit={valideForm} ref={div => (formAcc = div)}>
             <div className={errorForm === "Identifiant accepté" ? "accept" : "error"}> {errorForm}</div>
             <label htmlFor="identifiant">Identifiant: </label>
             <input
