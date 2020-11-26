@@ -34,6 +34,7 @@
         font-family: var(--second-font);
         font-size: var(--font-size-title);
         color: var(--second-color);
+        font-style: italic;
     }  
 
       .gold {
@@ -75,6 +76,7 @@
         font-size: 32px;
         color: var(--second-color);
         text-align: center;
+        font-style: italic;
     } 
 }
 
@@ -104,14 +106,16 @@
         font-size: 48px;
         color: var(--second-color);
         text-transform: capitalize;
+        text-align: center;
     }
 
     .p-fake-carousel {
         position: absolute;
-        margin-top: 130px;
+        margin-top: 180px;
         font-family: var(--second-font);
         font-size: 24px;
         color: var(--second-color);
         text-align: center;
+        font-style: italic;
     } 
 }
