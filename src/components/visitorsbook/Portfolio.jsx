@@ -36,9 +36,9 @@ class Portfolio extends React.Component {
                         <SectionTitle title="Full Moon Party" color="black" />
                         <div className="up" data-aos="fade-up">
                             <div className="pictureParty">
-                                <img className="photos" src='https://zupimages.net/up/20/46/43um.jpg' alt="" />
-                                <img className="photos" src='https://zupimages.net/up/20/46/8253.jpg' alt="platine" />
-                                <img className="photos" src='https://zupimages.net/up/20/46/pdy1.jpg' alt="piscine" />
+                                <img className="photos p1" src='https://zupimages.net/up/20/46/43um.jpg' alt="" />
+                                <img className="photos p2" src='https://zupimages.net/up/20/46/8253.jpg' alt="platine" />
+                                <img className="photos p3" src='https://zupimages.net/up/20/46/pdy1.jpg' alt="piscine" />
                             </div>
                         </div>
                         
