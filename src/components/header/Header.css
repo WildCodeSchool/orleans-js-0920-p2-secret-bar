@@ -1,0 +1,121 @@
+@import '../../App.css';
+
+@media screen and (min-width: 1024px) {
+    .imgFakeCarousel {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .imgFakeCarouselTablet {
+        display: none;
+    }
+
+    .imgFakeCarouselMobile {
+        display: none;
+    }
+
+    .container-fakeCarousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .h3-fake-carousel  {
+        position: absolute;
+        font-family: var(--main-font);
+        font-size: calc(var(--font-size-main) * 6);
+        color: var(--second-color);
+        text-transform: capitalize;
+      }
+
+    .p-fake-carousel {
+        position: absolute;
+        margin-top: 160px;
+        font-family: var(--second-font);
+        font-size: var(--font-size-title);
+        color: var(--second-color);
+        font-style: italic;
+    }  
+
+      .gold {
+        color: var(--third-color);
+      }
+}
+
+@media screen and (min-width: 425px) and (max-width: 1024px) {
+    .imgFakeCarousel {
+        display: none;
+    }
+
+    .imgFakeCarouselTablet {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .imgFakeCarouselMobile {
+        display: none;
+    }
+    .container-fakeCarousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+    .h3-fake-carousel {
+        position: absolute;
+        font-family: var(--main-font);
+        font-size: 64px;
+        color: var(--second-color);
+        text-transform: capitalize;
+      }
+
+      .p-fake-carousel {
+        position: absolute;
+        margin-top: 160px;
+        font-family: var(--second-font);
+        font-size: 32px;
+        color: var(--second-color);
+        text-align: center;
+        font-style: italic;
+    } 
+}
+
+@media screen and (max-width: 425px) {
+    .imgFakeCarousel {
+        display: none;
+    }
+
+    .imgFakeCarouselTablet {
+        display: none;
+    }
+
+    .imgFakeCarouselMobile {
+        width: 100%;
+        height: 95vh;
+    }
+    
+    .container-fakeCarousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    .h3-fake-carousel {
+        position: absolute;
+        font-family: var(--main-font);
+        font-size: 48px;
+        color: var(--second-color);
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .p-fake-carousel {
+        position: absolute;
+        margin-top: 180px;
+        font-family: var(--second-font);
+        font-size: 24px;
+        color: var(--second-color);
+        text-align: center;
+        font-style: italic;
+    } 
+}

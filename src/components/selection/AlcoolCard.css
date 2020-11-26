@@ -31,6 +31,7 @@ body {
     margin-top: 16px;
     font-weight: bolder;
     font-size: calc(var(--font-size-main) * 1.5);
+    cursor: auto !important;
 }
 
 .div-cocktail h3::after {
