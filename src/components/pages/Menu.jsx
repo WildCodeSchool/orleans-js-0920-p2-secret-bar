@@ -10,6 +10,7 @@ export default class Menu extends Component {
             <main className="container">
               <Navbar active="carte" />
               <Header 
+                text="venez découvrir notre carte"
                 urlImg="https://zupimages.net/up/20/48/da0a.jpg" 
                 urlImgTablet="https://zupimages.net/up/20/48/3mkx.jpg" 
                 urlImgMobile="https://zupimages.net/up/20/48/bqmg.jpg" 
