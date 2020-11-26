@@ -4,15 +4,15 @@ import './Opinion.css';
 const users = [
     {
       name: 'Thibault LE PARC',
-      comment: ' splendide '
+      comment: ' Splendide '
     },
     {
       name: 'Samia SAADANI',
-      comment: ' Quel ambiance ! J\'ai tellement dansé que je n\'ai même pas profité du reste... '
+      comment: ' Quelle ambiance ! J\'ai tellement dansé que je n\'ai même pas profité du reste... '
     },
     {
       name: 'Guillaume COUTURIER',
-      comment: " j'ai bien cru que je n'allais jamais rentrer chez moi rejoindre ma femme, je suis tombé amoureux 5 fois. "
+      comment: " J'ai bien cru que je n'allais jamais rentrer chez moi rejoindre ma femme, je suis tombé amoureux 5 fois. "
     },
     {
       name: 'Théo ATLANI',
@@ -39,9 +39,9 @@ class Opinion extends React.Component{
                                 <span class="star">&#x2605;</span>
                                 <span class="star">&#x2605;</span>
                             </div>
-                            <p className='citation'>"<i>j'ai passé une bonne soirée</i>"</p>
+                            <p className='citation'>" <i>J'ai passé une bonne soirée.</i> "</p>
                         </div>
-                        <p className='blase'><small>jordy ngoma</small></p>
+                        <p className='blase'><small>Jordy Ngoma</small></p>
                     </div>
                 </div>
 

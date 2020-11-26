@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
-/* .noti {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  border-top: solid rgb(233, 174, 96) 1px;
-  width: 80vw;
-  margin-left: 40px;
-} */
-
 .Note {
   margin-bottom: -5px;
 }
@@ -25,11 +16,6 @@
   width: 50%;
   margin: 0 auto;
 }
-
-/* .tout {
-  display: flex;
-  justify-content: center;
-} */
 
 .first-comment {
   border-top: 1px solid rgb(233, 174, 96);

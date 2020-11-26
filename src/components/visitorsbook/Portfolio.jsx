@@ -81,7 +81,7 @@ class Portfolio extends React.Component{
                     </div>
 
                     <p className="caption" data-aos="fade-up">
-                        Cette énorme fête organisée sur le thême de la <i>Full Moon</i> était mémorable , des cocktails spéciaux ont était préparé a cette occasion là, DJ Cogno était aux platines ! Et vous avez loupé ça ? Ne vous en faites pas, ces photos aiguilleront votre imagination, dans l'espoir de vous voir à là prochaine occasion.
+                        Cette énorme fête organisée sur le thème de la <i>Full Moon</i> était mémorable , des cocktails spéciaux ont été préparé a cette occasion, DJ Cogno était aux platines ! Et vous avez loupé ça ? Ne vous en faites pas, ces photos aiguilleront votre imagination, dans l'espoir de vous voir à la prochaine soirée.
                     </p>
 
                     <div className="opinion" data-aos="fade-up">
