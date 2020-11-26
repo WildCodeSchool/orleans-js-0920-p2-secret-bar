@@ -7,11 +7,10 @@ import ControlledCarousel from '../carousel/ControlledCarousel';
 import SectionTitle from '../section-title/SectionTitle';
 import Footer from "../footer/Footer";
 
-// var flkty = new Flickity( '.main-gallery', {
-//     cellAlign: 'left',
-//     contain: true
-//   });
-
+var flkty = new Flickity( '.main-gallery', {
+    cellAlign: 'left',
+    contain: true
+});
 
 class Portfolio extends React.Component{
     constructor(props){
@@ -68,15 +67,12 @@ class Portfolio extends React.Component{
                             </div>
 
                             <div className="galerie">
-                                <img className="photos1" src='https://zupimages.net/up/20/46/s8mi.jpg' alt=""/>
                                 <img className="photos2" src='https://zupimages.net/up/20/46/5ezf.jpg' alt=""/>
                                 <img  className="photos3" src='https://zupimages.net/up/20/46/np7z.jpg' alt=""/>
-                                <img className="photos4" src='https://zupimages.net/up/20/46/dhs0.jpg' alt=""/>
                                 <img className="photos5" src='https://zupimages.net/up/20/46/43um.jpg' alt=""/>
                                 <img className="photos6" src='https://zupimages.net/up/20/46/dhs0.jpg' alt="cocktail arc en ciel"/>
                                 <img className="photos7" src='https://zupimages.net/up/20/46/pdy1.jpg' alt="piscine"/>
                                 <img  className="photos8" src='https://zupimages.net/up/20/46/dwt3.jpg' alt="2 amies discutent"/>
-                                <img className="photos9" src='https://zupimages.net/up/20/46/vnk0.jpg' alt="filles en robes de soirée"/>
                                 <img className="photos10" src='https://zupimages.net/up/20/46/qrnu.jpg' alt="3 filles"/>
                                 <img  className="photos11" src='https://zupimages.net/up/20/46/8253.jpg' alt="platine"/>
                                 <img className="photos12" src='https://zupimages.net/up/20/46/zfi0.jpg' alt="verre pétillant"/>
